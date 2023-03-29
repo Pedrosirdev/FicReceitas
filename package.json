@@ -1,0 +1,11 @@
+{
+  "name": "ficreceitas---portifolio",
+  "version": "1.0.0",
+  "description": "Site ficticio de receitas para colocar no portifolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Henrique",
+  "license": "ISC"
+}
