@@ -2,3 +2,8 @@
 $color-light: rgba(217, 217, 217, 1);
 $color-main: rgba(89, 34, 2, 1);
 $color-main2: rgba(191, 129, 75, 1);
+
+body{
+  background-color: $color-main2;
+  color: $color-main;
+}
