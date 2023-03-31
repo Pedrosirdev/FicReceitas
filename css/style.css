@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
 #body {
-  margin-left: 50px;
-  background-color: brown;
+  background-color: rgb(217, 217, 217);
+}
+
+#navbar {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

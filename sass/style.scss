@@ -1,4 +1,10 @@
+@use "variaveis";
+
 #body{
-  margin-left: 50px;
-  background-color: brown;
+  background-color: variaveis.$color-light;
+}
+#navbar{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }

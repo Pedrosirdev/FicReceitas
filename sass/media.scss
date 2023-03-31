@@ -1,3 +1,7 @@
+@use "variaveis";
+
 .h2-teste {
-  color: rgb(61, 227, 49);
+  color: variaveis.$color-light;
+  text-decoration: underline;
+  font-family: variaveis.$font-main;
 }
