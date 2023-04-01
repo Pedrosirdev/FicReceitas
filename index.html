@@ -15,11 +15,21 @@
 
 </head>
 <body id="body">
+
+  <section id="info-screen">
+    <div id="x-small" style="position:fixed; background: red; padding: 2px; font-weight: bold;">X-small</div>
+    <div id="small" style="position:fixed; background: red; padding: 2px; font-weight: bold;">Small</div>
+    <div id="medium" style="position:fixed; background: red; padding: 2px; font-weight: bold;">Medium</div>
+    <div id="large" style="position:fixed; background: red; padding: 2px; font-weight: bold;">Large</div>
+    <div id="x-large" style="position:fixed; background: red; padding: 2px; font-weight: bold;">X-Large</div>
+    <div id="xx-large" style="position:fixed; background: red; padding: 2px; font-weight: bold;">XX-Large+</div>
+  </section>
+
   <!-- HEADER -->
   <!-- NAVBAR -->
   <nav id="navbar" class="container">
     <a class="logo-link" href="">
-      <img class="logo" src="./imagens/Logo-FicReceitas.png" alt="">
+      <img id="logo" class="logo" src="./imagens/Logo-FicReceitas.png" alt="">
     </a>
     <ul id="links-navbar">
       <li>
@@ -40,6 +50,14 @@
         <a href="">CATEGORIAS<i class="bi bi-caret-down-fill"></i></a>
       </li>
     </ul>
+
+    <button id="btn-menu">
+      <img src="./Icons/btn-menu.png" alt="">
+    </button>
+
+    <button id="btn-close">
+      <i class="bi bi-x-lg"></i>
+    </button>
 
   </nav>
   <!-- MENU OFFCANVAS -->
@@ -68,6 +86,7 @@
       </li>
     </ul>
   </nav>
+  <!-- FIM MENU OFFCANVAS -->
 
   <!-- FIM NAVBAR -->
   <!-- FIM HEADER -->
@@ -87,6 +106,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> -->
 
   <!-- Scrits js -->
-  <script src="./index.js"></script>
+  <script src="./index.js" type="module"></script>
 </body>
 </html>

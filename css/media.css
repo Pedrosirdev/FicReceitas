@@ -1,10 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #x-small {
+    display: visible;
+  }
+  #small, #medium, #large, #x-large, #xx-large {
+    display: none;
+  }
+  #links-navbar {
+    display: none;
+  }
+}
 /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #small {
+    display: visible;
+  }
+  #x-small, #medium, #large, #x-large, #xx-large {
+    display: none;
+  }
+  #links-navbar {
+    display: none;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #medium {
+    display: block;
+  }
+  #x-small, #small, #large, #x-large, #xx-large {
+    display: none;
+  }
+  #links-navbar {
+    display: none;
+  }
+}
 /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #large {
+    display: block;
+  }
+  #x-small, #small, #medium, #x-large, #xx-large {
+    display: none;
+  }
+  #links-navbar {
+    display: inherit;
+  }
+  #btn-menu, #navbar-offcanvas {
+    display: none;
+  }
+  #logo {
+    display: inline-block;
+  }
+}
 /*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #x-large {
+    display: block;
+  }
+  #x-small, #small, #medium, #large, #xx-large {
+    display: none;
+  }
+}
 /*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  #xx-large {
+    display: block;
+  }
+  #x-small, #small, #medium, #large, #x-large {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=media.css.map */
