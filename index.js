@@ -1,1 +1,3 @@
-import { btnMenu } from "./javascript/navbar.js";
+import { navbar } from "./javascript/navbar.js";
+
+navbar()

@@ -1,8 +1,10 @@
-export {btnMenu}
+export {navbar}
 
 const btnMenu = document.querySelector('#btn-menu')
 
-btnMenu.addEventListener('click',(ev) => {
-  ev.preventDefault()
-  alert('aaaaaaaaa')
-})
+function navbar(){
+  btnMenu.addEventListener('click',(ev) => {
+    ev.preventDefault()
+    alert('aaaaaaaaa')
+  })
+}
