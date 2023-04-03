@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+.none {
+  display: none;
+}
+
+.visibleD {
+  display: inline-block;
+}
+
+.hidden-offcanvas {
+  transform: translateY(-150%);
+}
+
+.show-offcanvas {
+  transform: translateY(0%);
+}
+
 a {
   text-decoration: none !important;
 }
@@ -32,17 +48,23 @@ a {
   height: 90%;
 }
 
-#btn-menu {
+#btn-menu, #btn-close {
   background: transparent;
   border: none;
 }
 
+#btn-close {
+  font-size: 30px;
+  color: rgb(89, 34, 2);
+}
+
 #navbar-offcanvas {
+  transition: 0.7s ease;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aqua;
+  background-color: transparent;
   height: 100vh;
   width: 100vw;
 }
@@ -91,6 +113,10 @@ a {
 .logo {
   width: 120px;
   height: 70px;
+}
+
+#logo {
+  transition: 0.8s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,3 +8,38 @@ $color-main2: rgba(191, 129, 75, 1);
 
 $font-main: 'Readex Pro', sans-serif;
 
+// Classes globais
+.none{
+  display: none;
+}
+.visibleD{
+  display: inline-block;
+}
+.hidden-offcanvas{
+  transform: translateY(-150%);
+}
+.show-offcanvas{
+  transform: translateY(0%);
+}
+
+// Animações
+
+// @keyframes softoffcanvas {
+//   0% {
+//     // position: relative;
+//     transform: translateY(-150%);
+//     transition: ease-out;
+
+//   }
+//   50%{
+//     // position: relative;
+//     transform: translateY(100%);
+//     transition: ease-out;
+
+//   }
+//   100%{
+//     // position: relative;
+//     transform: translateY(0);
+//     transition: ease-out;
+//   }
+// }

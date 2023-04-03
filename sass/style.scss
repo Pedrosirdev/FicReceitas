@@ -4,6 +4,7 @@
 //   border: 1px solid red;
 //   padding: 2px;
 // }
+
 a{
   text-decoration: none !important;
 }
@@ -38,19 +39,25 @@ a{
   }
 }
 
-#btn-menu{
+#btn-menu, #btn-close{
   background: transparent;
   border: none;
+
+}
+#btn-close{
+  font-size: 30px;
+  color: variaveis.$color-main1;
 }
 
 // --NAVBAR-OFFCANVAS
 #navbar-offcanvas{
+  transition: 0.7s ease;
   padding: 10px;
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
   align-items: center;
-  background-color: aqua;
+  background-color: transparent;
   height: 100vh;
   width: 100vw;
 
@@ -105,4 +112,7 @@ a{
 .logo{
   width: 120px;
   height: 70px;
+}
+#logo{
+  transition: 0.8s ease-out;
 }
