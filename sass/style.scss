@@ -26,10 +26,48 @@ a{
   gap: 1.5em;
   height: 100%;
   list-style-type: none;
+  justify-content: baseline;
+  align-items: baseline;
+
+  li{
+    
+  }
+
+  i{
+    font-weight: 500;
+    font-size: 18px;
+    color: variaveis.$color-main1;
+  }
+
+  .search-container{
+    max-width: 30px;
+    border-radius: 30px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s ease;
+
+    input{
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      padding: 3px 10px;
+      background-color: transparent;
+      color: #000;
+    }
+  }
+  .search-container.active{
+    max-width: 300px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
 
   a{
     color: variaveis.$color-main1;
     font-weight: 500;
+    font-size: 18px;
   }:hover{
     color: variaveis.$color-main2;
   }

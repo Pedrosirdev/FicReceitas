@@ -1,3 +1,4 @@
-import { navbar } from "./javascript/navbar.js";
+import { navbar, searchBarIcon } from "./javascript/navbar.js";
 
 navbar()
+searchBarIcon()
