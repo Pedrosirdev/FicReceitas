@@ -4,7 +4,7 @@
   "description": "Site ficticio de receitas para colocar no portifolio",
   "main": "index.js",
   "scripts": {
-    "watch": "sass sass/media.scss:css/media.css --watch sass/style.scss:css/style.css"
+    "watch": "sass sass/media.scss:css/media.css sass/style.scss:css/style.css --watch sass/carrosel.scss:css/carrosel.css"
   },
   "author": "Pedro Henrique",
   "license": "ISC",

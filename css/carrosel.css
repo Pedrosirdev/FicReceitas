@@ -1,0 +1,123 @@
+.slide-img-1 {
+  background: url(../imagens/closeup-tiro-de-cheesecake-com-geleia-decorada-com-morangos-e-frutas-vermelhas.jpg);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-img-2 {
+  background: url(../imagens/macarrao-penne-com-molho-de-tomate-com-linguica-tomate-manjericao-verde-decorado-em-uma-frigideira-sobre-uma-mesa-de-madeira.jpg);
+  height: 500px;
+  width: 100%;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-img-3 {
+  background: url(../imagens/carne-de-porco-assada-com-especiarias-e-ervas.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+
+.slide-img-4 {
+  background: url(../imagens/panquecas-de-close-up-com-frutas.jpg);
+  height: 500px;
+  width: 100%;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .slide-img-3 {
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+  }
+  .slide-img-2 {
+    height: 500px;
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide-img-1 {
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide-img-4 {
+    height: 500px;
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slider {
+    margin: 0 auto;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .slide div {
+    border: 1px solid blue;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .slide-img-3 {
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+  }
+  .slide-img-2 {
+    height: 500px;
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide-img-1 {
+    height: 500px;
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide-img-4 {
+    height: 500px;
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slider {
+    margin: 0 auto;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .slide div {
+    border: 1px solid blue;
+  }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+/*XX-Large devices (larger desktops, 1400px and up)*/
+
+/*# sourceMappingURL=carrosel.css.map */
