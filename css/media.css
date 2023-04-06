@@ -17,6 +17,10 @@
   margin-top: 0vh;
 }
 
+.background-btn-auto {
+  background-color: blue;
+}
+
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

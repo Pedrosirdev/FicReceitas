@@ -17,6 +17,10 @@
   margin-top: 0vh;
 }
 
+.background-btn-auto {
+  background-color: blue;
+}
+
 .slide-img-1 {
   background: url(../imagens/closeup-tiro-de-cheesecake-com-geleia-decorada-com-morangos-e-frutas-vermelhas.jpg);
   height: 500px;
@@ -53,11 +57,83 @@
   background-repeat: no-repeat;
 }
 
+.slider {
+  margin: 0 auto;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2px;
+}
+.slides input {
+  display: none;
+}
+
+.manual-navigation {
+  position: relative;
+  z-index: 2;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.manual-navigation .manual-btn {
+  border: 2px solid red;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+
+.navigation-auto div {
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto {
+  position: absolute;
+  margin-top: 451px;
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  width: 300px;
+}
+
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .slide-img-3 {
-    background-position: left;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
@@ -80,21 +156,25 @@
   .slide-img-4 {
     height: 500px;
     width: 100%;
-    background-position: left;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .slider {
-    margin: 0 auto;
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
-  }
   .slide div {
     border: 1px solid blue;
+    padding: 2px;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .slide-img-4 {
+    height: 500px;
+    width: 100%;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -125,12 +205,6 @@
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .slider {
-    margin: 0 auto;
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
   }
   .slide div {
     border: 1px solid blue;
@@ -330,6 +404,9 @@ a {
 #section-01 {
   border: 1px solid red;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
