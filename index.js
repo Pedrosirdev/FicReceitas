@@ -1,9 +1,18 @@
 import { navbar, searchBarIcon } from "./javascript/navbar.js";
-import { globalCarousel } from "./javascript/carousel.js";
+import { check, nextImage } from "./javascript/carousel.js";
 
 navbar()
 searchBarIcon()
-globalCarousel()
+
+// carousel.js
+check()
+radio1.checked = true
+
+setInterval(() => {
+  nextImage()
+}, 5000);
+
+
 
 
 

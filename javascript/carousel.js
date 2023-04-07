@@ -1,4 +1,4 @@
-export { globalCarousel }
+export { check, nextImage }
 
 
 const radio1 = document.querySelector('#radio1')
@@ -9,11 +9,6 @@ const radio3 = document.querySelector('#radio3')
 const autoBtn3 = document.querySelector('.auto-btn3')
 const radio4 = document.querySelector('#radio4')
 const autoBtn4 = document.querySelector('.auto-btn4')
-
-// const radios = [ radio1, radio2, radio3, radio4 ]
-// const btns = [ autoBtn1, autoBtn2, autoBtn3, autoBtn4 ]
-
-function globalCarousel() {
 
   function check(){
     radio1.addEventListener('click', () => {
@@ -41,27 +36,38 @@ function globalCarousel() {
       autoBtn1.classList.remove('background-btn-auto')
     })
   }
-
-  check()
-  
   let count = 1
-  document.getElementById("radio1").checked = true
-
-  setInterval(() => {
-    nextImage()
-  }, 5000);
-
   function nextImage() {
     count++
     if(count>4){
       count = 1
     }
-  
     document.getElementById("radio"+count).checked = true
+    
+    
   }
 
-  nextImage()
-
-}
-
-
+  if(document.getElementById("radio4").checked = true){
+    autoBtn1.classList.add('background-btn-auto')
+    // autoBtn2.classList.remove('background-btn-auto')
+    // autoBtn3.classList.remove('background-btn-auto')
+    // autoBtn4.classList.remove('background-btn-auto')
+  }
+  if(document.getElementById("radio3").checked = true){
+    autoBtn2.classList.add('background-btn-auto')
+    // autoBtn1.classList.remove('background-btn-auto')
+    // autoBtn3.classList.remove('background-btn-auto')
+    // autoBtn4.classList.remove('background-btn-auto')
+  }
+  if(document.getElementById("radio2").checked = true){
+    autoBtn3.classList.add('background-btn-auto')
+    // autoBtn2.classList.remove('background-btn-auto')
+    // autoBtn1.classList.remove('background-btn-auto')
+    // autoBtn4.classList.remove('background-btn-auto')
+  }
+  if(document.getElementById("radio1").checked = true){
+    autoBtn4.classList.add('background-btn-auto')
+    // autoBtn3.classList.remove('background-btn-auto')
+    autoBtn1.classList.remove('background-btn-auto')
+    // autoBtn2.classList.remove('background-btn-auto')
+  }
