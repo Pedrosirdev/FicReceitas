@@ -17,10 +17,6 @@
   margin-top: 0vh;
 }
 
-.background-btn-auto {
-  background-color: blue;
-}
-
 .slide-img-1 {
   background: url(../imagens/closeup-tiro-de-cheesecake-com-geleia-decorada-com-morangos-e-frutas-vermelhas.jpg);
   height: 500px;
@@ -69,7 +65,6 @@
   width: 25%;
   position: relative;
   transition: 1s ease-in-out;
-  position: relative;
 }
 
 .slides {
@@ -93,12 +88,16 @@
   gap: 20px;
 }
 .manual-navigation .manual-btn {
-  border: 0.01em solid red;
+  border: 0.01em solid rgb(89, 34, 2);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
+.manual-navigation :hover {
+  background-color: rgb(217, 217, 217);
+}
+
 #radio1:checked ~ .first {
   margin-left: 0;
 }
@@ -122,7 +121,6 @@
   transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
-  background-color: rgb(7, 7, 7);
 }
 
 .navigation-auto div:last-child {
@@ -136,6 +134,13 @@
   justify-content: center;
   gap: 22px;
   width: 90vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: rgb(217, 217, 217);
 }
 
 /*media queries*/
