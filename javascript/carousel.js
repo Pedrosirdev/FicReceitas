@@ -44,9 +44,9 @@ const autoBtn4 = document.querySelector('.auto-btn4')
   let count = 0
   radio1.checked = true
 
-  // const setIntervalId = setInterval(() => {
-  //   nextImage()
-  // }, 3000);
+  const setIntervalId = setInterval(() => {
+    nextImage()
+  }, 3000);
 
   document.querySelectorAll('input[name="radio-btn"]').forEach((radios) => {
     radios.addEventListener('click', () => {

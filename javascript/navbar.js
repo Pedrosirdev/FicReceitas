@@ -1,5 +1,6 @@
 export { navbar, searchBarIcon }
 
+const body = document.querySelector('body')
 const btnMenu = document.querySelector('#btn-menu')
 const btnClose = document.querySelector('#btn-close')
 const navbarOffcanvas = document.querySelector('#navbar-offcanvas')
@@ -15,6 +16,7 @@ function navbar(){
       navbarOffcanvas.classList.remove('hidden-offcanvas')
       navbarOffcanvas.classList.add('show-offcanvas')
       logo.classList.add('none')
+      body.classList.add('no-scroll')
   })
 
   btnClose.addEventListener('click',(ev) => {
@@ -27,6 +29,8 @@ function navbar(){
 
     dropdownOffcanvas.classList.add('none')
     dropdownOffcanvas.classList.remove('dropdown-category-offcanvas')
+
+    body.classList.remove('no-scroll')
   })
 
   categoryOffcanvas.addEventListener('click', (ev) => {
