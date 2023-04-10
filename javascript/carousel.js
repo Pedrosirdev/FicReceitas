@@ -1,13 +1,13 @@
 export { globalFunctionCarousel }
 
 
-const radio1 = document.querySelector('#radio1')
+const radio1   = document.querySelector('#radio1')
 const autoBtn1 = document.querySelector('.auto-btn1')
-const radio2 = document.querySelector('#radio2')
+const radio2   = document.querySelector('#radio2')
 const autoBtn2 = document.querySelector('.auto-btn2')
-const radio3 = document.querySelector('#radio3')
+const radio3   = document.querySelector('#radio3')
 const autoBtn3 = document.querySelector('.auto-btn3')
-const radio4 = document.querySelector('#radio4')
+const radio4   = document.querySelector('#radio4')
 const autoBtn4 = document.querySelector('.auto-btn4')
 
   function globalFunctionCarousel() {
@@ -40,22 +40,27 @@ const autoBtn4 = document.querySelector('.auto-btn4')
 
     check()
 
-    let count = 1
-    radio1.checked = true
+  // Function NextImage
+  let count = 0
+  radio1.checked = true
 
-    setInterval(() => {
-      nextImage()
-    }, 5000);
+  // const setIntervalId = setInterval(() => {
+  //   nextImage()
+  // }, 3000);
 
-    function nextImage() {
-      count++
-      if(count>4){
-        count = 1
-      }
-      document.getElementById("radio"+count).checked = true
-      
-      
+  document.querySelectorAll('input[name="radio-btn"]').forEach((radios) => {
+    radios.addEventListener('click', () => {
+      clearInterval(setIntervalId)
+    })
+  })
+
+  function nextImage() {
+    count++
+    if(count > 5){
+      count = 1
     }
+    document.getElementById("radio"+count).checked = true
+  }
 
     nextImage()
   }

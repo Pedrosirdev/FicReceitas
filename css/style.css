@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Readex+Pro&display=swap");
 .none {
   display: none;
 }
@@ -25,9 +26,34 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.slide-img-1 a {
+  position: relative;
+  top: 20%;
+  display: inline-block;
+}
+.slide-img-1 .div-text-carousel {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  font-weight: 700;
+}
+.slide-img-1 .div-text-carousel p {
+  width: 40%;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+}
+.slide-img-1 .div-text-carousel h2 {
+  font-family: "Quintessential", cursive;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(3px 3px 5px rgb(0, 0, 0));
+}
 
 .slide-img-2 {
-  background: url(../imagens/macarrao-penne-com-molho-de-tomate-com-linguica-tomate-manjericao-verde-decorado-em-uma-frigideira-sobre-uma-mesa-de-madeira.jpg);
   height: 500px;
   width: 100%;
   background-position: left;
@@ -36,7 +62,6 @@
 }
 
 .slide-img-3 {
-  background: url(../imagens/carne-de-porco-assada-com-especiarias-e-ervas.jpg);
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,7 +70,6 @@
 }
 
 .slide-img-4 {
-  background: url(../imagens/panquecas-de-close-up-com-frutas.jpg);
   height: 500px;
   width: 100%;
   background-position: left;
@@ -140,7 +164,7 @@
 #radio2:checked ~ .navigation-auto .auto-btn2,
 #radio3:checked ~ .navigation-auto .auto-btn3,
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-  background-color: rgb(217, 217, 217);
+  background-color: black;
 }
 
 /*media queries*/
@@ -226,6 +250,10 @@
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 /*XX-Large devices (larger desktops, 1400px and up)*/
+* {
+  font-family: "Readex Pro", sans-serif;
+}
+
 a {
   text-decoration: none !important;
 }
