@@ -212,7 +212,13 @@ a{
 #section-01{
   color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+
+  #all-recipes-section01{
+    padding:5px;
+    margin-top: 20px;
+  }
 }
