@@ -1,38 +1,32 @@
 @use "variaveis";
 
 // Estilos globais
-.slide-img-1{
-  background: url(../imagens/closeup-tiro-de-cheesecake-com-geleia-decorada-com-morangos-e-frutas-vermelhas.jpg);
+.slide-img-1, 
+.slide-img-2, 
+.slide-img-3,
+.slide-img-4 {
+  border-radius: 30px;
+  transition: 0.3s;
   height: 500px;
   width: 100%;
-  background-position: center;
-  background-size: cover;
+  background-size: cover !important;
   background-repeat: no-repeat;
-  transition: 0.3s;
+}
+.slide-img-1{
+  background: url(../imagens/closeup-tiro-de-cheesecake-com-geleia-decorada-com-morangos-e-frutas-vermelhas.jpg);
+  background-position: center;
 }
 .slide-img-2{
   background: url(../imagens/macarrao-penne-com-molho-de-tomate-com-linguica-tomate-manjericao-verde-decorado-em-uma-frigideira-sobre-uma-mesa-de-madeira.jpg);
-  height: 500px;
-  width: 100%;
   background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .slide-img-3{
   background: url(../imagens/carne-de-porco-assada-com-especiarias-e-ervas.jpg);
   background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 100%;
 }
 .slide-img-4{
   background: url(../imagens/panquecas-de-close-up-com-frutas.jpg);
-  height: 500px;
-  width: 100%;
   background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 #credit-freepik{
   color: black;
@@ -62,13 +56,7 @@
   scale: 1.05;
   border-radius: 30px;
 }
-.slide-img-1, 
-.slide-img-2, 
-.slide-img-3,
-.slide-img-4{
-  border-radius: 30px;
-  transition: 0.3s;
-}
+
 .slides{
   width: 400%;
   height: 400px;
@@ -79,9 +67,38 @@
     display: none;
   }
 }
-
-
-
+.manual-navigation{
+  position: absolute;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  .manual-btn{
+    border: 0.01em solid variaveis.$color-main1;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }:hover{
+    background-color: variaveis.$color-light;
+  }
+}
+.navigation-auto{
+  position: absolute;
+  margin-top: 470px; 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+    div{
+      border: 0.01em solid variaveis.$color-main1;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      display: flex;
+      justify-content: center;
+    }
+  }
 #radio1:checked ~ .first{
   margin-left: 0;
 }
@@ -94,9 +111,6 @@
 #radio4:checked ~ .first{
   margin-left: -75%;
 }
-
-
-
 #radio1:checked ~ .navigation-auto .auto-btn1, 
 #radio2:checked ~ .navigation-auto .auto-btn2,
 #radio3:checked ~ .navigation-auto .auto-btn3,
@@ -106,60 +120,28 @@
 
 // FIM ESTILOS PADRÕES
 
-
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .manual-navigation{
-    position: absolute;
-    margin-top: 70px;
-    display: flex;
     width: 300px;
-    justify-content: center;
-    gap: 20px;
-    .manual-btn{
-      border: 0.01em solid variaveis.$color-main1;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-    }:hover{
-      background-color: variaveis.$color-light;
-    }
   }
   .navigation-auto{
-  position: absolute;
-  margin-top: 470px; 
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   width: 300px;
-    div{
-      border: 0.01em solid variaveis.$color-main1;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      display: flex;
-      justify-content: center;
-    }
   }
-
   .slider{
     width: 300px;
   }
   .slide-img-3{
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
+    
     .div-text-carousel{
       a{
         font-family: variaveis.$font-titles;
         display: flex;
         margin-top: -8%;
         padding-bottom: 100%;
+        padding-left: 10px;
         font-weight: 700;
         color: rgb(255, 255, 255);
         letter-spacing: 2px;
@@ -168,18 +150,16 @@
     }
   }
   .slide-img-2{
-    height: 500px;
     width: 100%;
     background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.3s;
+    
     .div-text-carousel{
       a{
         font-family: variaveis.$font-titles;
         display: flex;
         margin-top: -8%;
         padding-bottom: 100%;
+        padding-left: 10px;
         font-weight: 700;
         color: rgb(255, 255, 255);
         letter-spacing: 2px;
@@ -188,11 +168,8 @@
     }
   }
   .slide-img-1{
-    height: 500px;
-    width: 100%;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
       .div-text-carousel{
         a{
           font-family: variaveis.$font-titles;
@@ -208,17 +185,16 @@
       }
   }
   .slide-img-4{
-    height: 500px;
     width: 100%;
     background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
       .div-text-carousel{
         a{
           font-family: variaveis.$font-titles;
           display: flex;
           margin-top: -8%;
           padding-bottom: 100%;
+          padding-left: 10px;
           font-weight: 700;
           color: rgb(255, 255, 255);
           letter-spacing: 2px;
@@ -226,9 +202,7 @@
         }
       }
   }
-  
   .slide{
-  
     div{
       padding: 2px;
     }
@@ -237,49 +211,17 @@
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .manual-navigation{
-    position: absolute;
-    margin-top: 70px;
-    display: flex;
     width: 500px;
-    justify-content: center;
-    gap: 20px;
-    .manual-btn{
-      border: 0.01em solid variaveis.$color-main1;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-    }:hover{
-      background-color: variaveis.$color-light;
-    }
   }
   .navigation-auto{
-  position: absolute;
-  margin-top: 470px; 
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   width: 500px;
-    div{
-      border: 0.01em solid variaveis.$color-main1;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      display: flex;
-      justify-content: center;
-    }
   }
-
   .slider{
     width: 500px;
   }
   .slide-img-1{
-    height: 500px;
-    width: 100%;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
       .div-text-carousel{
         a{
           font-family: variaveis.$font-titles;
@@ -301,7 +243,7 @@
         display: flex;
         margin-top: -8%;
         padding-bottom: 100%;
-        padding-left: 30px;
+        padding-left: 20px;
         font-weight: 700;
         color: rgb(255, 255, 255);
         letter-spacing: 2px;
@@ -325,11 +267,8 @@
     }
   }
   .slide-img-4{
-    height: 500px;
-    width: 100%;
     background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
       .div-text-carousel{
         a{
           font-family: variaveis.$font-titles;
@@ -348,47 +287,28 @@
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .manual-navigation{
-    position: absolute;
-    margin-top: 70px;
-    display: flex;
     width: 700px;
-    justify-content: center;
-    gap: 20px;
-    .manual-btn{
-      border: 0.01em solid variaveis.$color-main1;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-    }:hover{
-      background-color: variaveis.$color-light;
-    }
   }
   .navigation-auto{
-  position: absolute;
-  margin-top: 470px; 
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   width: 700px;
-    div{
-      border: 0.01em solid variaveis.$color-main1;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      display: flex;
-      justify-content: center;
-    }
   }
-
   .slider{
     width: 700px;
   }
   .slide-img-1{
+    background-position: center;
+    
       .div-text-carousel{
         a{
-          margin-top: -5%;
+          font-family: variaveis.$font-titles;
+          display: flex;
+          margin-top: -4%;
+          padding-bottom: 100%;
+          padding-left: 12px;
+          font-weight: 700;
+          color: rgb(255, 255, 255);
+          letter-spacing: 2px;
+          filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
         }
       }
   }
@@ -403,57 +323,55 @@
     }
   }
   .slide-img-3{
+    .div-text-carousel{
+      a{
+        font-family: variaveis.$font-titles;
+        display: flex;
+        margin-top: -6%;
+        padding-left: 15px;
+        padding-bottom: 100%;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+        filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+      }
+    }
     a{
       padding: 10px;
     }
+  }
+  .slide-img-4{
+    background-position: right;
+    
+      .div-text-carousel{
+        a{
+          font-family: variaveis.$font-titles;
+          display: flex;
+          margin-top: -4%;
+          padding-left: 12px;
+          padding-bottom: 100%;
+          font-weight: 700;
+          color: rgb(255, 255, 255);
+          letter-spacing: 2px;
+          filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+        }
+      }
   }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .manual-navigation{
-    position: absolute;
-    margin-top: 70px;
-    display: flex;
     width: 920px;
-    justify-content: center;
-    gap: 20px;
-    .manual-btn{
-      border: 0.01em solid variaveis.$color-main1;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-    }:hover{
-      background-color: variaveis.$color-light;
-    }
   }
   .navigation-auto{
-  position: absolute;
-  margin-top: 470px; 
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   width: 920px;
-    div{
-      border: 0.01em solid variaveis.$color-main1;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      display: flex;
-      justify-content: center;
-    }
   }
-
   .slider{
     width: 920px;
   }
   .slide-img-3{
     background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
+    
     .div-text-carousel{
       a{
         margin-top: -5%;
@@ -462,39 +380,58 @@
     }
   }
   .slide-img-2{
-    height: 500px;
-    width: 100%;
     background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
+    .div-text-carousel{
+      a{
+        padding-left: 30px;
+      }
+    }
   }
   .slide-img-1{
-    height: 500px;
     width: 100%;
     background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
+    .div-text-carousel{
+      a{
+        font-family: variaveis.$font-titles;
+        display: flex;
+        margin-top: -3%;
+        padding-bottom: 100%;
+        padding-left: 19px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+        filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+      }
+    }
   }
   .slide-img-4{
-    height: 500px;
-    width: 100%;
     background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
       .div-text-carousel{
         a{
           margin-left: 25px;
-          margin-top: -5%;
+          margin-top: -3%;
         }
       }
   }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  .manual-navigation{
+    width: 1100px;
+  }
+  .navigation-auto{
+  width: 1100px;
+  }
+  .slider{
+    width: 1100px;
+  }
   .slide-img-1{
       .div-text-carousel{
         a{
-          margin-top: -3%;
+          margin-top: -2%;
         }
       }
   }
@@ -507,27 +444,26 @@
   }
   .slide-img-3{
     background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
+    
     .div-text-carousel{
       a{
-        margin-top: -5%;
+        margin-top: -3%;
         margin-left: 20px;
       }
     }
   }
-
-  .manual-navigation{
-    // width: 90vw;
-  }
-  .navigation-auto{
-    width: 90vw;
-  }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
+  .manual-navigation{
+    width: 1250px;
+  }
+  .navigation-auto{
+  width: 1250px;
+  }
+  .slider{
+    width: 1250px;
+  }
 .slide-img-1{
     .div-text-carousel{
       a{
@@ -544,10 +480,7 @@
 }
 .slide-img-3{
   background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 100%;
+  
   .div-text-carousel{
     a{
       margin-top: -3%;

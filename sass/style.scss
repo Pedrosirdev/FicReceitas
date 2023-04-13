@@ -14,6 +14,11 @@ a{
 #body{
   background-color: variaveis.$color-light;
 }
+.hr{
+  color: variaveis.$color-main1;
+  opacity: 100;
+  margin: 1.5em 2em;
+}
 
 // -- NAVBAR
 #navbar{
@@ -181,11 +186,14 @@ a{
     text-align: center;
     align-items: center;
     .dropdown-category-offcanvas{
+      z-index: 5;
       display: flex;
       flex-direction: column;
       width: 60%;
       justify-content: center;
-
+      overflow: scroll;
+      padding: 150px 10px 0px 10px;
+      height: 250px;
       a{
         padding: 0.1em;
         margin: 0.1em;
@@ -220,5 +228,11 @@ a{
   #all-recipes-section01{
     padding:5px;
     margin-top: 20px;
+    text-decoration: underline !important;
+    color: variaveis.$color-main1;
+    transition: 0.3s ease-in-out;
+  }
+  #all-recipes-section01:hover{
+    color: variaveis.$color-main2;
   }
 }
