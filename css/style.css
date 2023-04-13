@@ -687,9 +687,7 @@ a {
 #section-02 .div-receitas-procuradas h2 {
   padding: 5px;
   color: rgb(89, 34, 2);
-}
-#section-02 .container-cards {
-  display: flex;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
