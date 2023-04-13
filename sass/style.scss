@@ -104,11 +104,13 @@ a{
     }
   }
 }
+.dropdown-category{
+  transition: 0.5s ease-in-out;
+}
 #category:hover .dropdown-category{
   display: block;
-  transition: 0.5s ease-in-out;
-
 }
+
 #category{
   transition: 0.5s ease-in-out;
   padding-bottom: 10px;
@@ -177,6 +179,22 @@ a{
       width: 24px;
       height: 24px;
     }
+    .dropdown-category-offcanvas{
+      position: relative;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      align-items: center;
+      justify-content: center;
+      overflow: scroll;
+      padding: 150px 10px 0px 10px;
+      height: 220px;
+      a{
+        padding: 0.1em;
+        margin: 0.1em;
+      }
+    }
   }
 
   #category-offcanvas{
@@ -185,21 +203,9 @@ a{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    .dropdown-category-offcanvas{
-      z-index: 5;
-      display: flex;
-      flex-direction: column;
-      width: 60%;
-      justify-content: center;
-      overflow: scroll;
-      padding: 150px 10px 0px 10px;
-      height: 250px;
-      a{
-        padding: 0.1em;
-        margin: 0.1em;
-      }
-    }
+    transition: 0.3s ease-in-out;
   }
+
 }
 
 #category{
@@ -235,4 +241,23 @@ a{
   #all-recipes-section01:hover{
     color: variaveis.$color-main2;
   }
+}
+
+// SEÇAÕ 02
+#section-02{
+
+  .div-receitas-procuradas{
+    display: flex;
+    align-items:last baseline;
+
+    h2{
+    padding: 5px;
+    color: variaveis.$color-main1;
+    }
+  }   
+
+  .container-cards{
+    display: flex;
+  }
+
 }

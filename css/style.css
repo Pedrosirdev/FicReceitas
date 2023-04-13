@@ -550,9 +550,12 @@ a {
   color: rgb(191, 129, 75);
 }
 
+.dropdown-category {
+  transition: 0.5s ease-in-out;
+}
+
 #category:hover .dropdown-category {
   display: block;
-  transition: 0.5s ease-in-out;
 }
 
 #category {
@@ -620,26 +623,29 @@ a {
   width: 24px;
   height: 24px;
 }
+#navbar-offcanvas #links-navbar-offcanvas .dropdown-category-offcanvas {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  padding: 150px 10px 0px 10px;
+  height: 220px;
+}
+#navbar-offcanvas #links-navbar-offcanvas .dropdown-category-offcanvas a {
+  padding: 0.1em;
+  margin: 0.1em;
+}
 #navbar-offcanvas #category-offcanvas {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-}
-#navbar-offcanvas #category-offcanvas .dropdown-category-offcanvas {
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  justify-content: center;
-  overflow: scroll;
-  padding: 150px 10px 0px 10px;
-  height: 250px;
-}
-#navbar-offcanvas #category-offcanvas .dropdown-category-offcanvas a {
-  padding: 0.1em;
-  margin: 0.1em;
+  transition: 0.3s ease-in-out;
 }
 
 #category i {
@@ -672,6 +678,18 @@ a {
 }
 #section-01 #all-recipes-section01:hover {
   color: rgb(191, 129, 75);
+}
+
+#section-02 .div-receitas-procuradas {
+  display: flex;
+  align-items: last baseline;
+}
+#section-02 .div-receitas-procuradas h2 {
+  padding: 5px;
+  color: rgb(89, 34, 2);
+}
+#section-02 .container-cards {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
