@@ -34,6 +34,49 @@
   #links-navbar {
     display: none;
   }
+  #section-02 .container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #section-02 .container-cards .card1 .desc-card {
+    inset: auto auto 200px 30px;
+  }
+  #section-02 .container-cards .card1 .ingredientes-card {
+    inset: auto auto 90px 30px;
+  }
+  #section-02 .container-cards .card1 .time-card {
+    inset: auto auto 30px 30px;
+  }
+  #section-02 .container-cards .card2 .desc-card2 {
+    inset: auto auto 220px 30px;
+  }
+  #section-02 .container-cards .card2 .ingredientes-card2 {
+    inset: auto auto 90px 30px;
+  }
+  #section-02 .container-cards .card2 .time-card2 {
+    inset: auto auto 30px 30px;
+  }
+  #section-02 .container-cards .card3 .desc-card3 {
+    inset: auto auto 220px 30px;
+  }
+  #section-02 .container-cards .card3 .ingredientes-card3 {
+    inset: auto auto 90px 30px;
+  }
+  #section-02 .container-cards .card3 .time-card3 {
+    inset: auto auto 30px 30px;
+  }
+  #section-02 .container-cards .card4 .desc-card4 {
+    inset: auto auto 270px 30px;
+  }
+  #section-02 .container-cards .card4 .ingredientes-card4 {
+    inset: auto auto 140px 30px;
+  }
+  #section-02 .container-cards .card4 .time-card4 {
+    inset: auto auto 80px 30px;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -57,6 +100,29 @@
   }
   #links-navbar {
     display: none;
+  }
+  #section-02 .container-cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    gap: 30px;
+  }
+  #section-02 .container-cards .card3 h4 {
+    inset: 380px 350px 220px 30px;
+    width: 60%;
+    transition: inset 0.3s ease-out;
+  }
+  #section-02 .container-cards .card3 .desc-card3 {
+    inset: auto auto 220px 30px;
+  }
+  #section-02 .container-cards .card3 .ingredientes-card3 {
+    inset: auto auto 90px 30px;
+  }
+  #section-02 .container-cards .card3 .time-card3 {
+    inset: auto auto 30px 30px;
+  }
+  #section-02 .container-cards .card3:hover h4 {
+    inset: 25px 25px 380px 30px;
   }
 }
 /*Large devices (desktops, 992px and up)*/
@@ -88,6 +154,13 @@
   #x-small, #small, #medium, #large, #xx-large {
     display: none;
   }
+  #section-02 .container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
@@ -96,6 +169,9 @@
   }
   #x-small, #small, #medium, #large, #x-large {
     display: none;
+  }
+  #section-02 .container-cards {
+    gap: 50px;
   }
 }
 

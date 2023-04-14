@@ -696,6 +696,68 @@ a {
   align-items: center;
   gap: 30px;
 }
+#section-02 .container-cards .card1 h4 {
+  color: rgb(217, 217, 217);
+}
+#section-02 .container-cards .card1 p {
+  color: rgb(217, 217, 217);
+}
+#section-02 .container-cards .card1 .desc-card {
+  inset: auto auto 200px 30px;
+}
+#section-02 .container-cards .card1 .ingredientes-card {
+  inset: auto auto 90px 30px;
+}
+#section-02 .container-cards .card1 .time-card {
+  inset: auto auto 30px 30px;
+}
+#section-02 .container-cards .card2 h4 {
+  color: rgb(217, 217, 217);
+  text-shadow: 2px 2px black;
+}
+#section-02 .container-cards .card2 p {
+  color: rgb(217, 217, 217);
+}
+#section-02 .container-cards .card2 .desc-card2 {
+  inset: auto auto 220px 30px;
+}
+#section-02 .container-cards .card2 .ingredientes-card2 {
+  inset: auto auto 90px 30px;
+}
+#section-02 .container-cards .card2 .time-card2 {
+  inset: auto auto 30px 30px;
+}
+#section-02 .container-cards .card3 h4 {
+  color: rgb(217, 217, 217);
+}
+#section-02 .container-cards .card3 p {
+  color: rgb(217, 217, 217);
+}
+#section-02 .container-cards .card3 .desc-card3 {
+  inset: auto auto 220px 30px;
+}
+#section-02 .container-cards .card3 .ingredientes-card3 {
+  inset: auto auto 90px 30px;
+}
+#section-02 .container-cards .card3 .time-card3 {
+  inset: auto auto 30px 30px;
+}
+#section-02 .container-cards .card4 h4 {
+  color: rgb(217, 217, 217);
+  text-shadow: 2px 2px black;
+}
+#section-02 .container-cards .card4 p {
+  color: rgb(217, 217, 217);
+}
+#section-02 .container-cards .card4 .desc-card4 {
+  inset: auto auto 270px 30px;
+}
+#section-02 .container-cards .card4 .ingredientes-card4 {
+  inset: auto auto 140px 30px;
+}
+#section-02 .container-cards .card4 .time-card4 {
+  inset: auto auto 80px 30px;
+}
 #section-02 .container-cards .cards {
   position: relative;
   overflow: hidden;
@@ -714,8 +776,7 @@ a {
   object-fit: cover;
   top: 0;
   left: 0;
-  opacity: 0.9;
-  transition: opacity 0.2s ease-out;
+  transition: 0.2s ease-out;
   border-radius: 30px;
 }
 #section-02 .container-cards .cards h4 {
@@ -723,18 +784,16 @@ a {
   inset: auto auto 30px 30px;
   margin: 0;
   transition: inset 0.3s 0.3s ease-out;
-  color: #f1f1f1;
+  font-weight: 700;
 }
 #section-02 .container-cards .cards p {
   position: absolute;
   opacity: 0;
   max-width: 80%;
   transition: opacity 0.3s ease-out;
-  inset: auto auto 80px 30px;
-  color: #f1f1f1;
 }
 #section-02 .container-cards .cards:hover h4 {
-  inset: auto auto 220px 30px;
+  inset: auto auto 400px 30px;
   transition: inset 0.3s ease-out;
 }
 #section-02 .container-cards .cards:hover p {
@@ -742,8 +801,23 @@ a {
   transition: opacity 0.5s 0.1s ease-in;
 }
 #section-02 .container-cards .cards:hover img {
-  transition: opacity 0.3s ease-in;
-  opacity: 1;
+  transition: 0.3s ease-in;
+  filter: brightness(50%);
+}
+
+#all-recipes-section02 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 0px;
+}
+#all-recipes-section02 a {
+  color: rgb(89, 34, 2);
+  text-decoration: underline !important;
+  transition: 0.3s ease-in-out;
+}
+#all-recipes-section02 :hover {
+  color: rgb(191, 129, 75);
 }
 
 /*# sourceMappingURL=style.css.map */

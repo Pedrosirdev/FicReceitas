@@ -256,6 +256,7 @@ a{
     margin-bottom:30px;
     }
   } 
+
   .container-cards{
     display: flex;
     flex-direction: column;
@@ -263,6 +264,99 @@ a{
     align-items: center;
     gap: 30px;
 
+    .card1{
+
+      h4{
+        color: variaveis.$color-light;
+      }
+
+      p{
+        color: variaveis.$color-light;
+      }
+
+      .desc-card{
+        inset: auto auto 200px 30px;
+      }
+
+      .ingredientes-card{
+        inset: auto auto 90px 30px;
+      }
+
+      .time-card{
+        inset: auto auto 30px 30px;
+      }
+    }
+
+    .card2{
+
+      h4{
+        color: variaveis.$color-light;
+        text-shadow: 2px 2px black;
+      }
+
+      p{
+        color: variaveis.$color-light;
+      }
+      .desc-card2{
+        inset: auto auto 220px 30px;
+      }
+
+      .ingredientes-card2{
+        inset: auto auto 90px 30px;
+      }
+
+      .time-card2{
+        inset: auto auto 30px 30px;
+      }
+    }
+
+    .card3{
+
+      h4{
+        color: variaveis.$color-light;
+      }
+
+      p{
+        color: variaveis.$color-light;
+      }
+      .desc-card3{
+        inset: auto auto 220px 30px;
+      }
+
+      .ingredientes-card3{
+        inset: auto auto 90px 30px;
+      }
+
+      .time-card3{
+        inset: auto auto 30px 30px;
+      }
+    }
+
+    .card4{
+
+      h4{
+        color: variaveis.$color-light;
+        text-shadow: 2px 2px black;
+      }
+
+      p{
+        color: variaveis.$color-light;
+      }
+
+      .desc-card4{
+        inset: auto auto 270px 30px;
+      }
+
+      .ingredientes-card4{
+        inset: auto auto 140px 30px;
+      }
+
+      .time-card4{
+        inset: auto auto 80px 30px;
+      }
+    }
+
+    
     .cards{
       position: relative;
       overflow: hidden;
@@ -270,7 +364,6 @@ a{
       height: 452px;
       border-radius: 30px;
       box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
-
 
       a{
         display: inline-block;
@@ -282,8 +375,7 @@ a{
         object-fit: cover;
         top: 0;
         left: 0;
-        opacity: 0.9;
-        transition: opacity .2s ease-out;
+        transition: .2s ease-out;
         border-radius: 30px;
       }
       h4{
@@ -291,18 +383,17 @@ a{
         inset: auto auto 30px 30px;
         margin: 0;
         transition: inset .3s .3s ease-out;
-        color: #f1f1f1;
+        font-weight: 700;
       }
       p{
         position: absolute;
         opacity: 0;
         max-width: 80%;
         transition: opacity .3s ease-out;
-        inset: auto auto 80px 30px;
-        color: #f1f1f1;
       }
+
       &:hover h4 {
-        inset: auto auto 220px 30px;
+        inset: auto auto 400px 30px;
         transition: inset .3s ease-out;
       }
       &:hover p{
@@ -310,15 +401,23 @@ a{
         transition: opacity .5s .1s ease-in;
       }
       &:hover img {
-        transition: opacity .3s ease-in;
-        opacity: 1;
+        transition: .3s ease-in;
+        filter: brightness(50%)
       }
     }
-
-    .card1{
-      
-    }
   }
+}
+#all-recipes-section02{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 0px;
+  a{
+    color: variaveis.$color-main1;
+    text-decoration: underline !important;
+    transition: 0.3s ease-in-out;
 
-
+  }:hover{
+    color: variaveis.$color-main2;
+  }
 }

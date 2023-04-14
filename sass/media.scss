@@ -15,8 +15,77 @@
     display: none;
   }
   // SEÇÃO 02
-#section-02{
+  #section-02{
 
+    .container-cards{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+  
+      .card1{
+
+        .desc-card{
+          inset: auto auto 200px 30px;
+        }
+  
+        .ingredientes-card{
+          inset: auto auto 90px 30px;
+        }
+  
+        .time-card{
+          inset: auto auto 30px 30px;
+        }
+      }
+  
+      .card2{
+
+        .desc-card2{
+          inset: auto auto 220px 30px;
+        }
+  
+        .ingredientes-card2{
+          inset: auto auto 90px 30px;
+        }
+  
+        .time-card2{
+          inset: auto auto 30px 30px;
+        }
+      }
+  
+      .card3{
+
+        .desc-card3{
+          inset: auto auto 220px 30px;
+        }
+  
+        .ingredientes-card3{
+          inset: auto auto 90px 30px;
+        }
+  
+        .time-card3{
+          inset: auto auto 30px 30px;
+        }
+      }
+  
+      .card4{
+
+        .desc-card4{
+          inset: auto auto 270px 30px;
+        }
+  
+        .ingredientes-card4{
+          inset: auto auto 140px 30px;
+        }
+  
+        .time-card4{
+          inset: auto auto 80px 30px;
+        }
+      }
+
+    }
+  
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
@@ -32,10 +101,6 @@
   #links-navbar{
     display: none;
   }
-  // #logo{
-  //   display: none;
-  // }
-
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
@@ -50,9 +115,45 @@
   #links-navbar{
     display: none;
   }
-  // #logo{
-  //   display: none;
-  // }
+
+    // SEÇÃO 02
+  #section-02{
+
+    .container-cards{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-items: center;
+      gap: 30px;
+
+      .card3{
+  
+        h4{
+          inset: 380px 350px 220px 30px;
+          width: 60%;
+          transition: inset .3s ease-out;
+        }
+
+        .desc-card3{
+          inset: auto auto 220px 30px;
+        }
+  
+        .ingredientes-card3{
+          inset: auto auto 90px 30px;
+        }
+  
+        .time-card3{
+          inset: auto auto 30px 30px;
+        }
+
+        &:hover h4{
+          inset: 25px 25px 380px 30px;
+        }
+      }
+
+    }
+  
+  }
+
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -89,8 +190,18 @@
     display: none;
   }
 
-    // NAVBAR
+  // SEÇÃO 02
+  #section-02{
 
+    .container-cards{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  
+  }
 
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
@@ -102,5 +213,12 @@
     display: none;
   }
 
-    // NAVBAR
+  // SEÇÃO 02
+  #section-02{
+
+    .container-cards{
+      gap: 50px;
+    }
+  
+  }
 }
