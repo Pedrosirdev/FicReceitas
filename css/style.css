@@ -908,4 +908,42 @@ a {
   border-radius: 30px;
 }
 
+.footer {
+  padding-top: 5em;
+}
+.footer .container-social {
+  justify-content: center;
+  display: flex;
+  gap: 6em;
+  margin-bottom: 8em;
+}
+.footer .container-social a {
+  transition: 0.3s ease-in-out;
+}
+.footer .container-social i {
+  font-size: 35px;
+  color: rgb(89, 34, 2);
+  transition: 0.3s ease-in-out;
+}
+.footer .container-social :hover {
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
+}
+.footer .links-rodape {
+  display: flex;
+  justify-content: center;
+}
+.footer .links-rodape ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0px;
+}
+.footer .links-rodape a {
+  color: rgb(89, 34, 2);
+}
+.footer .links-rodape :hover {
+  color: rgb(68, 26, 2);
+}
+
 /*# sourceMappingURL=style.css.map */

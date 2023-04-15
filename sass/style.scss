@@ -500,3 +500,41 @@ a{
   }
 }
 }
+// RODAPÉ
+.footer{
+  padding-top: 5em;
+
+  .container-social{
+    justify-content: center;
+    display: flex;
+    gap: 6em;
+    margin-bottom: 8em;
+    a{
+      transition: 0.3s ease-in-out;
+    }
+    i{
+      font-size: 35px;
+      color: variaveis.$color-main1;
+      transition: 0.3s ease-in-out;
+    }:hover{
+      scale: 1.1;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .links-rodape{
+    display: flex;
+    justify-content: center;
+    ul{
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      padding: 0px;
+    }
+    a{
+    color: variaveis.$color-main1;
+    }:hover{
+      color: rgb(68, 26, 2);
+    }
+  }
+}
