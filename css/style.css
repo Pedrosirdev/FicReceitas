@@ -820,4 +820,66 @@ a {
   color: rgb(191, 129, 75);
 }
 
+#section-03 .div-as-mais-avaliadas {
+  display: flex;
+  align-items: last baseline;
+}
+#section-03 .div-as-mais-avaliadas h2 {
+  padding: 5px;
+  color: rgb(89, 34, 2);
+  margin-bottom: 30px;
+  position: relative;
+  bottom: 17px;
+}
+#section-03 .container-bem-avaliadas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#section-03 .stars {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+#section-03 .cont-receita-avaliada1,
+#section-03 .cont-receita-avaliada2,
+#section-03 .cont-receita-avaliada3,
+#section-03 .cont-receita-avaliada4,
+#section-03 .cont-receita-avaliada5,
+#section-03 .cont-receita-avaliada6 {
+  position: relative;
+  border: 1px solid red;
+  width: 270px;
+  height: 154px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#section-03 .cont-receita-avaliada1 h4,
+#section-03 .cont-receita-avaliada2 h4,
+#section-03 .cont-receita-avaliada3 h4,
+#section-03 .cont-receita-avaliada4 h4,
+#section-03 .cont-receita-avaliada5 h4,
+#section-03 .cont-receita-avaliada6 h4 {
+  margin-bottom: 100px;
+}
+#section-03 .cont-receita-avaliada1 a,
+#section-03 .cont-receita-avaliada2 a,
+#section-03 .cont-receita-avaliada3 a,
+#section-03 .cont-receita-avaliada4 a,
+#section-03 .cont-receita-avaliada5 a,
+#section-03 .cont-receita-avaliada6 a {
+  display: inline-block;
+}
+#section-03 .cont-receita-avaliada1 img,
+#section-03 .cont-receita-avaliada2 img,
+#section-03 .cont-receita-avaliada3 img,
+#section-03 .cont-receita-avaliada4 img,
+#section-03 .cont-receita-avaliada5 img,
+#section-03 .cont-receita-avaliada6 img {
+  object-fit: cover;
+  border-radius: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */

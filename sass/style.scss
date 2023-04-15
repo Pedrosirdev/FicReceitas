@@ -421,3 +421,62 @@ a{
     color: variaveis.$color-main2;
   }
 }
+
+// SEÇÃO 03
+#section-03{
+
+  .div-as-mais-avaliadas{
+    display: flex;
+    align-items:last baseline;
+
+    h2{
+      padding: 5px;
+      color: variaveis.$color-main1;
+      margin-bottom:30px;
+      position: relative;
+      bottom: 17px;
+    }
+  }
+
+  .container-bem-avaliadas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .stars{
+    position: absolute;
+    left: 15px;
+    top: 5px;
+  }
+
+  .cont-receita-avaliada1,
+  .cont-receita-avaliada2,
+  .cont-receita-avaliada3,
+  .cont-receita-avaliada4,
+  .cont-receita-avaliada5,
+  .cont-receita-avaliada6{
+    position: relative;
+    border: 1px solid red;
+    width: 270px;
+    height: 154px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h4{
+      margin-bottom: 100px;
+    }
+    a{
+      display: inline-block;
+    }
+    img{
+      object-fit: cover;
+      border-radius: 30px;
+    }
+  }
+
+  .cont-receita-avaliada1{
+
+  }
+}
