@@ -77,6 +77,19 @@
   #section-02 .container-cards .card4 .time-card4 {
     inset: auto auto 80px 30px;
   }
+  .container-bem-avaliadas {
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .container-bem-avaliadas .cont-receita-avaliada1 h4,
+  .container-bem-avaliadas .cont-receita-avaliada2 h4,
+  .container-bem-avaliadas .cont-receita-avaliada3 h4,
+  .container-bem-avaliadas .cont-receita-avaliada4 h4,
+  .container-bem-avaliadas .cont-receita-avaliada5 h4,
+  .container-bem-avaliadas .cont-receita-avaliada6 h4 {
+    font-size: 18px;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -88,6 +101,19 @@
   }
   #links-navbar {
     display: none;
+  }
+  .container-bem-avaliadas {
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .container-bem-avaliadas .cont-receita-avaliada1 h4,
+  .container-bem-avaliadas .cont-receita-avaliada2 h4,
+  .container-bem-avaliadas .cont-receita-avaliada3 h4,
+  .container-bem-avaliadas .cont-receita-avaliada4 h4,
+  .container-bem-avaliadas .cont-receita-avaliada5 h4,
+  .container-bem-avaliadas .cont-receita-avaliada6 h4 {
+    font-size: 20px;
   }
 }
 /*Medium devices (tablets, 768px and up)*/
@@ -123,6 +149,21 @@
   }
   #section-02 .container-cards .card3:hover h4 {
     inset: 25px 25px 380px 30px;
+  }
+  .container-bem-avaliadas {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    column-gap: 0px;
+    row-gap: 30px;
+  }
+  .container-bem-avaliadas .cont-receita-avaliada1 h4,
+  .container-bem-avaliadas .cont-receita-avaliada2 h4,
+  .container-bem-avaliadas .cont-receita-avaliada3 h4,
+  .container-bem-avaliadas .cont-receita-avaliada4 h4,
+  .container-bem-avaliadas .cont-receita-avaliada5 h4,
+  .container-bem-avaliadas .cont-receita-avaliada6 h4 {
+    font-size: 22px;
   }
 }
 /*Large devices (desktops, 992px and up)*/
@@ -160,6 +201,17 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+  }
+  .container-bem-avaliadas {
+    grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+  }
+  .container-bem-avaliadas .cont-receita-avaliada1 h4,
+  .container-bem-avaliadas .cont-receita-avaliada2 h4,
+  .container-bem-avaliadas .cont-receita-avaliada3 h4,
+  .container-bem-avaliadas .cont-receita-avaliada4 h4,
+  .container-bem-avaliadas .cont-receita-avaliada5 h4,
+  .container-bem-avaliadas .cont-receita-avaliada6 h4 {
+    font-size: 22px;
   }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
