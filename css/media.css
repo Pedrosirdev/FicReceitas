@@ -90,6 +90,28 @@
   .container-bem-avaliadas .cont-receita-avaliada6 h4 {
     font-size: 18px;
   }
+  .footer {
+    padding-top: 8em;
+  }
+  .footer .container-social {
+    padding-left: 2em;
+    justify-content: start;
+    display: flex;
+    gap: 3em;
+    margin-bottom: 5em;
+  }
+  .footer .links-rodape {
+    padding-left: 2em;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .footer .links-rodape ul {
+    display: initial;
+  }
+  .footer .links-rodape li {
+    margin-top: 1.5em;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -114,6 +136,29 @@
   .container-bem-avaliadas .cont-receita-avaliada5 h4,
   .container-bem-avaliadas .cont-receita-avaliada6 h4 {
     font-size: 20px;
+  }
+  .footer {
+    padding-top: 8em;
+    margin-left: 2em !important;
+  }
+  .footer .container-social {
+    padding-left: 2em;
+    justify-content: start;
+    display: flex;
+    gap: 3em;
+    margin-bottom: 5em;
+  }
+  .footer .links-rodape {
+    padding-left: 2em;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .footer .links-rodape ul {
+    display: initial;
+  }
+  .footer .links-rodape li {
+    margin-top: 1.5em;
   }
 }
 /*Medium devices (tablets, 768px and up)*/
@@ -165,6 +210,29 @@
   .container-bem-avaliadas .cont-receita-avaliada6 h4 {
     font-size: 22px;
   }
+  .footer {
+    padding-top: 8em;
+    margin-left: 2em !important;
+  }
+  .footer .container-social {
+    padding-left: 2em;
+    justify-content: start;
+    display: flex;
+    gap: 3em;
+    margin-bottom: 5em;
+  }
+  .footer .links-rodape {
+    padding-left: 2em;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .footer .links-rodape ul {
+    display: initial;
+  }
+  .footer .links-rodape li {
+    margin-top: 1.5em;
+  }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -185,6 +253,29 @@
   }
   #btn-close {
     display: none;
+  }
+  .footer {
+    padding-top: 5em;
+    margin-left: auto !important;
+  }
+  .footer .container-social {
+    padding-left: 0em;
+    justify-content: center;
+    display: flex;
+    gap: 6em;
+    margin-bottom: 8em;
+  }
+  .footer .links-rodape {
+    padding-left: 0em;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .links-rodape ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px;
   }
 }
 /*X-Large devices (large desktops, 1200px and up)*/

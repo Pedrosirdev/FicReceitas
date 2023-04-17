@@ -107,6 +107,32 @@
     }
   }
 }
+
+  // RODAPÉ
+  .footer{
+    padding-top: 8em;
+
+    .container-social{
+      padding-left: 2em; 
+      justify-content: start;
+      display: flex;
+      gap: 3em;
+      margin-bottom: 5em;
+    }
+
+    .links-rodape{
+      padding-left: 2em; 
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      ul{
+        display: initial;
+      }
+      li{
+        margin-top: 1.5em;
+      }
+    }
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -140,6 +166,33 @@
       }
     }
 }
+
+  // RODAPÉ
+  .footer{
+    padding-top: 8em;
+    margin-left: 2em !important;
+
+    .container-social{
+      padding-left: 2em; 
+      justify-content: start;
+      display: flex;
+      gap: 3em;
+      margin-bottom: 5em;
+    }
+
+    .links-rodape{
+      padding-left: 2em; 
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      ul{
+        display: initial;
+      }
+      li{
+        margin-top: 1.5em;
+      }
+    }
+  }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
@@ -214,6 +267,33 @@
   }
 }
 
+  // RODAPÉ
+  .footer{
+    padding-top: 8em;
+    margin-left: 2em !important;
+
+    .container-social{
+      padding-left: 2em; 
+      justify-content: start;
+      display: flex;
+      gap: 3em;
+      margin-bottom: 5em;
+    }
+
+    .links-rodape{
+      padding-left: 2em; 
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      ul{
+        display: initial;
+      }
+      li{
+        margin-top: 1.5em;
+      }
+    }
+  }
+
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -238,6 +318,33 @@
   // OFFCANVAS
   #btn-close{
     display: none;
+  }
+
+  // RODAPÉ
+  .footer{
+    padding-top: 5em;
+    margin-left: auto !important;
+  
+    .container-social{
+      padding-left: 0em;   
+      justify-content: center;
+      display: flex;
+      gap: 6em;
+      margin-bottom: 8em;
+    }
+  
+    .links-rodape{
+      padding-left: 0em;   
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+      ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0px;
+      }
+    }
   }
 
 }

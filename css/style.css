@@ -470,6 +470,12 @@ a {
   margin: 1.5em 2em;
 }
 
+#by-pedro-henrique {
+  display: inline-block;
+  color: rgb(89, 34, 2);
+  margin: 2em 2em 1em 2em;
+}
+
 #navbar {
   padding: 10px;
   display: flex;
@@ -912,8 +918,10 @@ a {
   padding-top: 5em;
 }
 .footer .container-social {
+  padding-left: 2em;
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 6em;
   margin-bottom: 8em;
 }
@@ -930,6 +938,7 @@ a {
   transition: 0.3s ease-in-out;
 }
 .footer .links-rodape {
+  padding-left: 0em;
   display: flex;
   justify-content: center;
 }
