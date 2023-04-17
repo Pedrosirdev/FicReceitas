@@ -496,12 +496,6 @@
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  #x-small {
-    display: visible;
-  }
-  #small, #medium, #large, #x-large, #xx-large {
-    display: none;
-  }
   #sectionAllRecipes {
     margin-bottom: 10vh;
   }
@@ -522,12 +516,6 @@
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  #small {
-    display: visible;
-  }
-  #x-small, #medium, #large, #x-large, #xx-large {
-    display: none;
-  }
   #sectionAllRecipes {
     margin-bottom: 10vh;
   }
@@ -548,12 +536,6 @@
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  #medium {
-    display: block;
-  }
-  #x-small, #small, #large, #x-large, #xx-large {
-    display: none;
-  }
   #sectionAllRecipes {
     margin-bottom: 25vh;
   }
@@ -573,30 +555,238 @@
   }
 }
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-  #large {
-    display: block;
+/*X-Large devices (large desktops, 1200px and up)*/
+/*XX-Large devices (larger desktops, 1400px and up)*/
+#container-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4em;
+  color: rgb(89, 34, 2);
+}
+#container-form h3 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#container-form form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: rgb(191, 129, 75);
+  border-radius: 30px;
+  padding: 10px;
+  width: 70%;
+  font-weight: 400;
+}
+#container-form form textarea {
+  height: 10em;
+  border-radius: 30px;
+  border: none;
+  resize: none;
+  width: 80%;
+  padding: 10px;
+}
+#container-form form textarea:focus {
+  border: none;
+}
+#container-form form input {
+  border-radius: 30px;
+  border: none;
+  width: 60%;
+}
+#container-form form :focus {
+  border: none;
+}
+#container-form form input[type=file] {
+  display: none;
+}
+#container-form form label[for=recipe-img] {
+  color: rgb(191, 129, 75);
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 60%;
+  padding: 1px 2px;
+}
+#container-form form .name-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 45%;
+}
+#container-form form .name-list label {
+  padding: 10px 5px;
+}
+#container-form form .img-preparation {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  width: 45%;
+}
+#container-form form .img-preparation label:not(label:nth-of-type(2)) {
+  padding: 10px 5px;
+}
+#container-form form input[type=submit] {
+  width: 11em;
+  height: 2.5em;
+  margin: 0 auto;
+  background-color: rgb(89, 34, 2);
+  color: #fff;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+#container-form form input[type=submit]:hover {
+  scale: 1.05;
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #container-form {
+    flex-direction: column;
   }
-  #x-small, #small, #medium, #x-large, #xx-large {
-    display: none;
+  #container-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+  }
+  #container-form form textarea {
+    width: 100%;
+  }
+  #container-form form input {
+    width: 80%;
+  }
+  #container-form form label[for=recipe-img] {
+    width: 80%;
+  }
+  #container-form form .name-list {
+    width: 100%;
+  }
+  #container-form form .img-preparation {
+    width: 100%;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #container-form {
+    flex-direction: column;
+  }
+  #container-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+  }
+  #container-form form textarea {
+    width: 100%;
+  }
+  #container-form form input {
+    width: 80%;
+  }
+  #container-form form label[for=recipe-img] {
+    width: 80%;
+  }
+  #container-form form .name-list {
+    width: 100%;
+  }
+  #container-form form .img-preparation {
+    width: 100%;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #container-form {
+    flex-direction: column;
+  }
+  #container-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+  #container-form form textarea {
+    width: 100%;
+  }
+  #container-form form input {
+    width: 80%;
+  }
+  #container-form form label[for=recipe-img] {
+    width: 80%;
+  }
+  #container-form form .name-list {
+    width: 100%;
+  }
+  #container-form form .img-preparation {
+    width: 100%;
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #container-form {
+    flex-direction: column;
+  }
+  #container-form form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+  }
+  #container-form form textarea {
+    width: 100%;
+  }
+  #container-form form input {
+    width: 70%;
+  }
+  #container-form form label[for=recipe-img] {
+    width: 70%;
+  }
+  #container-form form .name-list {
+    width: 45%;
+  }
+  #container-form form .img-preparation {
+    width: 45%;
   }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  #x-large {
-    display: block;
-  }
-  #x-small, #small, #medium, #large, #xx-large {
-    display: none;
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
   }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-  #xx-large {
-    display: block;
+  #container-form {
+    flex-direction: column;
   }
-  #x-small, #small, #medium, #large, #x-large {
-    display: none;
+  #container-form form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+  }
+  #container-form form textarea {
+    width: 100%;
+  }
+  #container-form form input {
+    width: 70%;
+  }
+  #container-form form label[for=recipe-img] {
+    width: 70%;
+  }
+  #container-form form .name-list {
+    width: 45%;
+  }
+  #container-form form .img-preparation {
+    width: 45%;
   }
 }
 * {
@@ -621,6 +811,9 @@ a {
   display: inline-block;
   color: rgb(89, 34, 2);
   margin: 2em 2em 1em 2em;
+}
+#by-pedro-henrique span {
+  text-decoration: underline;
 }
 
 #navbar {

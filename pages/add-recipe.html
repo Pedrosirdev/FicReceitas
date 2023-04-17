@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FicReceitas - Todas as receitas</title>
+  <title>FicReceitas - Enviar receita</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/media.css">
   <!-- Links Bootstrap -->
@@ -24,41 +24,32 @@
     <div id="xx-large" style="position:fixed; background: red; padding: 2px; font-weight: bold;">XX-Large+</div>
   </section>
 
-  <section class="container" id="sectionAllRecipes">
+  <section class="container mb-5" id="container-form">
 
-    <div class="div-AllRecipes-text">
-      <h2>Todas as receitas</h2>
-      <img src="../Icons/undraw_diet_ghvw 1.png" alt="">
-    </div>
-    <h6>Por categoria</h6>
+    <h3>Preencha os campos abaixo para enviar sua receita</h3>
 
-    <div class="all-recipes-list">
+    <form action="">
 
-      <div class="group-1">
-        <a href="">Fitness</a>
-        <a href="">Saudáveis</a>
-        <a href="">Fáceis</a>
+      <div class="name-list">
+        <label for="name-recipe">Nome da receita:</label>
+        <input id="name-recipe" name="name-recipe" type="text">
+
+        <label for="list-ingredients">Lista de ingredientes:</label>
+        <textarea id="list-ingredients" name="list-ingredients"></textarea>
       </div>
 
-      <div class="group-2">
-        <a href="">Pizzas</a>
-        <a href="">Massas</a>
-        <a href="">Pães</a>
+      <div class="img-preparation">
+        <label>Imagem da receita:</label>
+        <label for="recipe-img">Escolher imagem</label>
+        <input id="recipe-img" name="recipe-img" type="file" accept="image/*" capture="environment">
+
+        <label for="method-preparation">Modo de preparo:</label>
+        <textarea id="method-preparation" name="method-preparation"></textarea>
       </div>
 
-      <div class="group-3">
-        <a href="">Salgados</a>
-        <a href="">Doces</a>
-        <a href="">Sobremesas</a>
-      </div>
+      <input class="" type="submit" value="Enviar">
 
-      <div class="group-4">
-        <a href="">Carnes</a>
-        <a href="">Caldos e Sopas</a>
-        <a href="">Café da manhã</a>
-      </div>
-
-    </div>
+    </form>
 
   </section>
 

@@ -1,6 +1,7 @@
 @use "variaveis";
 @use "carrosel";
 @use "all-Recipes";
+@use "form";
 
 // *{
 //   border: 1px solid red;
@@ -24,6 +25,9 @@ a{
   display: inline-block;
   color: variaveis.$color-main1;
   margin: 2em 2em 1em 2em;
+  span{
+    text-decoration: underline;
+  }
 }
 
 // -- NAVBAR
