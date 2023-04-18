@@ -5,14 +5,21 @@
 .section-recipes-globais{
   color: variaveis.$color-main1;
   padding-top: 2em;
+  flex-direction: row;
   display: flex;
   gap: 1em;
+
+  .click-star{
+    color: variaveis.$color-stars;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+  }
 
   h4, h5{
     font-weight: 600;
   }
   .cont-details-recipes{
-    border: 1px solid red;
     width: 60%;
     padding: 0.5em;
 
@@ -32,9 +39,9 @@
 
     .div-title-time-star{
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      border: 1px solid blue;
       margin: 0.5em 0em;
 
       h4 + div{
@@ -42,9 +49,9 @@
       }
 
       span{
-        background-color: #fff;
         padding: 0.5em;
         border-radius: 30px;
+        background-color: #fff;
       }
 
       .stars{
@@ -65,50 +72,176 @@
   }
   
   .cont-ingredients-preparation{
-    border: 1px solid rgb(0, 0, 0);
     width: 40%;
     padding: 0.5em;
 
-    li{
-      padding: 0.5em 0;
 
-      span{
-        margin-right: 5px;
-        padding: 1em;
-        border-radius: 50%;
-        background-color: variaveis.$color-main1;
-        color: variaveis.$color-light;
-      }
-    }
   
     .ingredients-global-styles{
-      border: 1px solid rgb(18, 167, 33);
       margin-bottom: 0.5em;
+
+      li{
+        padding: 0.5em 0;
+
+      }
       
     }
     .preparation-styles-global{
-      border: 1px solid rgb(15, 145, 206);
+      
+      ul{
+        padding-left: 0;
+      }
 
       li{
         list-style-type: none;
+        padding: 0.5em 0;
+        margin-top: 0.8em;
+  
+        span{
+          display: inline-block;
+          margin: 5px;
+          padding: 0.2em 0.6em;
+          border-radius: 50%;
+          background-color: variaveis.$color-main1;
+          color: variaveis.$color-light;
+        }
       }
     }
   }
 }
 
-
             /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+  .section-recipes-globais{
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+
+    .cont-details-recipes{
+      width: 100%;
+
+      .div-title-time-star{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        h4 + div{
+          width: 100%;
+        }
+
+        .stars{
+          color: variaveis.$color-stars;
+        }
+  
+        span, div{
+          text-align: start;
+        }
+  
+        h4,
+        div{
+          width:100%;
+        }
+      }
+    }
+    
+    .cont-ingredients-preparation{
+      width: 100%;
+      margin-bottom: 5em;
+    }
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .section-recipes-globais{
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+
+    .cont-details-recipes{
+      width: 100%;
+
+      .div-title-time-star{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        h4 + div{
+          width: 100%;
+        }
+
+        .stars{
+          color: variaveis.$color-stars;
+        }
+  
+        span, div{
+          text-align: start;
+        }
+  
+        h4,
+        div{
+          width:100%;
+        }
+      }
+    }
+    
+    .cont-ingredients-preparation{
+      width: 100%;
+      margin-bottom: 5em;
+    }
+  }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .cont-ingredients-preparation{
+    width: 100%;
+    margin-bottom: 10em !important;
+  }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  .section-recipes-globais{
+    padding-top: 4em;
+    flex-direction: row;
+    display: flex;
+
+    .cont-details-recipes{
+      width: 60%;
+      padding: 0.5em;
+      margin-bottom: 8em;
+  
+      .div-title-time-star{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5em 0em;
+  
+        h4 + div{
+          width: 20%;
+        }
+
+        .stars{
+          color: variaveis.$color-stars;
+        }
+
+        span, div{
+          text-align: center;
+        }
+  
+        h4,
+        div{
+          width:35%;
+        }
+      }
+    }
+
+    .cont-ingredients-preparation{
+      width: 40%;
+    }
+  }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {

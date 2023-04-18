@@ -792,14 +792,20 @@
 .section-recipes-globais {
   color: rgb(89, 34, 2);
   padding-top: 2em;
+  flex-direction: row;
   display: flex;
   gap: 1em;
+}
+.section-recipes-globais .click-star {
+  color: rgb(231, 181, 56);
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
 }
 .section-recipes-globais h4, .section-recipes-globais h5 {
   font-weight: 600;
 }
 .section-recipes-globais .cont-details-recipes {
-  border: 1px solid red;
   width: 60%;
   padding: 0.5em;
 }
@@ -817,18 +823,18 @@
 }
 .section-recipes-globais .cont-details-recipes .div-title-time-star {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid blue;
   margin: 0.5em 0em;
 }
 .section-recipes-globais .cont-details-recipes .div-title-time-star h4 + div {
   width: 20%;
 }
 .section-recipes-globais .cont-details-recipes .div-title-time-star span {
-  background-color: #fff;
   padding: 0.5em;
   border-radius: 30px;
+  background-color: #fff;
 }
 .section-recipes-globais .cont-details-recipes .div-title-time-star .stars {
   color: rgb(231, 181, 56);
@@ -842,46 +848,146 @@
   padding: 0.5em;
 }
 .section-recipes-globais .cont-ingredients-preparation {
-  border: 1px solid rgb(0, 0, 0);
   width: 40%;
   padding: 0.5em;
 }
-.section-recipes-globais .cont-ingredients-preparation li {
+.section-recipes-globais .cont-ingredients-preparation .ingredients-global-styles {
+  margin-bottom: 0.5em;
+}
+.section-recipes-globais .cont-ingredients-preparation .ingredients-global-styles li {
   padding: 0.5em 0;
 }
-.section-recipes-globais .cont-ingredients-preparation li span {
-  margin-right: 5px;
-  padding: 1em;
+.section-recipes-globais .cont-ingredients-preparation .preparation-styles-global ul {
+  padding-left: 0;
+}
+.section-recipes-globais .cont-ingredients-preparation .preparation-styles-global li {
+  list-style-type: none;
+  padding: 0.5em 0;
+  margin-top: 0.8em;
+}
+.section-recipes-globais .cont-ingredients-preparation .preparation-styles-global li span {
+  display: inline-block;
+  margin: 5px;
+  padding: 0.2em 0.6em;
   border-radius: 50%;
   background-color: rgb(89, 34, 2);
   color: rgb(217, 217, 217);
 }
-.section-recipes-globais .cont-ingredients-preparation .ingredients-global-styles {
-  border: 1px solid rgb(18, 167, 33);
-  margin-bottom: 0.5em;
-}
-.section-recipes-globais .cont-ingredients-preparation .preparation-styles-global {
-  border: 1px solid rgb(15, 145, 206);
-}
-.section-recipes-globais .cont-ingredients-preparation .preparation-styles-global li {
-  list-style-type: none;
-}
 
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .section-recipes-globais {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-recipes-globais .cont-details-recipes {
+    width: 100%;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star h4 + div {
+    width: 100%;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star .stars {
+    color: rgb(231, 181, 56);
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star span, .section-recipes-globais .cont-details-recipes .div-title-time-star div {
+    text-align: start;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star h4,
+  .section-recipes-globais .cont-details-recipes .div-title-time-star div {
+    width: 100%;
+  }
+  .section-recipes-globais .cont-ingredients-preparation {
+    width: 100%;
+    margin-bottom: 5em;
+  }
+}
 /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .section-recipes-globais {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-recipes-globais .cont-details-recipes {
+    width: 100%;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star h4 + div {
+    width: 100%;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star .stars {
+    color: rgb(231, 181, 56);
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star span, .section-recipes-globais .cont-details-recipes .div-title-time-star div {
+    text-align: start;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star h4,
+  .section-recipes-globais .cont-details-recipes .div-title-time-star div {
+    width: 100%;
+  }
+  .section-recipes-globais .cont-ingredients-preparation {
+    width: 100%;
+    margin-bottom: 5em;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .cont-ingredients-preparation {
+    width: 100%;
+    margin-bottom: 10em !important;
+  }
+}
 /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .section-recipes-globais {
+    padding-top: 4em;
+    flex-direction: row;
+    display: flex;
+  }
+  .section-recipes-globais .cont-details-recipes {
+    width: 60%;
+    padding: 0.5em;
+    margin-bottom: 8em;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0em;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star h4 + div {
+    width: 20%;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star .stars {
+    color: rgb(231, 181, 56);
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star span, .section-recipes-globais .cont-details-recipes .div-title-time-star div {
+    text-align: center;
+  }
+  .section-recipes-globais .cont-details-recipes .div-title-time-star h4,
+  .section-recipes-globais .cont-details-recipes .div-title-time-star div {
+    width: 35%;
+  }
+  .section-recipes-globais .cont-ingredients-preparation {
+    width: 40%;
+  }
+}
 /*X-Large devices (large desktops, 1200px and up)*/
 /*XX-Large devices (larger desktops, 1400px and up)*/
-ol li::marker {
-  display: list-item;
-  font-size: 30px;
-  background-color: black;
-  width: 20px;
-  height: 20px;
-}
-
 * {
   font-family: "Readex Pro", sans-serif;
 }
