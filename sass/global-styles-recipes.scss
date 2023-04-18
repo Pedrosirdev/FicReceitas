@@ -1,0 +1,118 @@
+@use "./variaveis.scss";
+
+
+// GLOBAL STYLES
+.section-recipes-globais{
+  color: variaveis.$color-main1;
+  padding-top: 2em;
+  display: flex;
+  gap: 1em;
+
+  h4, h5{
+    font-weight: 600;
+  }
+  .cont-details-recipes{
+    border: 1px solid red;
+    width: 60%;
+    padding: 0.5em;
+
+    .div-img-recipe{
+      border-radius: 30px;
+      overflow: hidden;
+
+      img{
+        object-fit: cover;
+        width: 100%;
+        transition: 0.5s ease-in-out;
+      }
+      img:hover{
+        scale: 1.05;
+      }
+    }
+
+    .div-title-time-star{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid blue;
+      margin: 0.5em 0em;
+
+      h4 + div{
+        width: 20%;
+      }
+
+      span{
+        background-color: #fff;
+        padding: 0.5em;
+        border-radius: 30px;
+      }
+
+      .stars{
+        color: variaveis.$color-stars;
+      }
+      
+
+      span, div{
+        text-align: center;
+      }
+
+      h4,
+      div{
+        width:35%;
+        padding: 0.5em;
+      }
+    }
+  }
+  
+  .cont-ingredients-preparation{
+    border: 1px solid rgb(0, 0, 0);
+    width: 40%;
+    padding: 0.5em;
+
+    li{
+      padding: 0.5em 0;
+
+      span{
+        margin-right: 5px;
+        padding: 1em;
+        border-radius: 50%;
+        background-color: variaveis.$color-main1;
+        color: variaveis.$color-light;
+      }
+    }
+  
+    .ingredients-global-styles{
+      border: 1px solid rgb(18, 167, 33);
+      margin-bottom: 0.5em;
+      
+    }
+    .preparation-styles-global{
+      border: 1px solid rgb(15, 145, 206);
+
+      li{
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+
+            /*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}

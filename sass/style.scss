@@ -2,6 +2,10 @@
 @use "carrosel";
 @use "all-Recipes";
 @use "form";
+@use "./global-styles-recipes.scss";
+
+@use "./sass-recipes/fit-pancake-with-fruits.scss";
+
 
 // *{
 //   border: 1px solid red;
@@ -469,7 +473,6 @@ a{
   .cont-receita-avaliada6{
     position: relative;
     box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.5);
-    // border: 1px solid red;
     border-radius: 30px;
     z-index: 1;
     width: 270px;
@@ -482,7 +485,6 @@ a{
     margin: 20px 0px;
 
     h4{
-      // border: 1px solid black;
       color: variaveis.$color-main1;
       width: 260px;
       position: absolute;
