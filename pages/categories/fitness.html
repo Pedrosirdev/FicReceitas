@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FicReceitas - Enviar receita</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/media.css">
+  <title>Receitas fitness</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/media.css">
   <!-- Links Bootstrap -->
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
   <!-- Bootstrap icons -->
-  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
 </head>
+
+
 <body id="body">
 
   <section id="info-screen">
@@ -27,8 +29,8 @@
       <!-- HEADER -->
   <!-- NAVBAR -->
   <nav id="navbar" class="container">
-    <a class="logo-link" href="../index.html">
-      <img id="logo" class="logo" src="../imagens/Logo-FicReceitas.png" alt="">
+    <a class="logo-link" href="../../index.html">
+      <img id="logo" class="logo" src="../../imagens/Logo-FicReceitas.png" alt="">
     </a>
     <ul id="links-navbar">
       <li class="search-container">
@@ -36,10 +38,10 @@
           <input placeholder="Bolinho de queijo..." type="text">
       </li>
       <li>
-        <a href="./categories/fitness.html">FIT</a>
+        <a href="">FIT</a>
       </li>
       <li>
-        <a href="./categories/healthy.html">SAUDÁVEIS</a>
+        <a href="./healthy.html">SAUDÁVEIS</a>
       </li>
       <li>
         <a href="">FÁCEIS</a>
@@ -47,8 +49,8 @@
       <li id="category">
         <a id="category-link">CATEGORIAS<i class="bi bi-caret-down-fill"></i></a>
         <div class="dropdown-category">
-          <a href="./categories/fitness.html">Fit</a>
-          <a href="./categories/healthy.html">Saudáveis</a>
+          <a href="">Fit</a>
+          <a href="./healthy.html">Saudáveis</a>
           <a href="">Café da manhã</a>
           <a href="">Massas</a>
           <a href="">Pizzas</a>
@@ -64,7 +66,7 @@
     </ul>
 
     <button id="btn-menu">
-      <img src="../Icons/btn-menu.png" alt="">
+      <img src="../../Icons/btn-menu.png" alt="">
     </button>
 
     <button class="none" id="btn-close">
@@ -76,20 +78,20 @@
   <!-- MENU OFFCANVAS -->
   <nav class="hidden-offcanvas" id="navbar-offcanvas">
     <a class="logo-link" href="">
-      <img class="logo" src="../imagens/Logo-FicReceitas.png" alt="">
+      <img class="logo" src="../../imagens/Logo-FicReceitas.png" alt="">
     </a>
     <ul id="links-navbar-offcanvas">
       <li>
         <div>
           <input type="text" placeholder="Bolinho de queijo..." name="" id="">
-          <img src="../Icons/search 1.png" alt="">
+          <img src="../../Icons/search 1.png" alt="">
         </div>
       </li>
       <li>
-        <a href="./categories/fitness.html">FIT</a>
+        <a href="">FIT</a>
       </li>
       <li>
-        <a href="./categories/healthy.html">SAUDÁVEIS</a>
+        <a href="./healthy.html">SAUDÁVEIS</a>
       </li>
       <li>
         <a href="">FÁCEIS</a>
@@ -98,8 +100,8 @@
         <a class="category-links-offcanvas" href="">CATEGORIAS<i class="bi bi-caret-down-fill"></i></a>
       </li>
       <div id="dropdown-category-offcanvas" class="none">
-        <a id="fit-offcanvas" href="./categories/fitness.html">Fit</a>
-        <a href="./categories/healthy.html">Saudáveis</a>
+        <a id="fit-offcanvas" href="">Fit</a>
+        <a href="./healthy.html">Saudáveis</a>
         <a href="">Café da manhã</a>
         <a href="">Massas</a>
         <a href="">Pizzas</a>
@@ -118,43 +120,95 @@
   <!-- FIM NAVBAR -->
   <!-- FIM HEADER -->
 
-  <section class="container mb-5" id="container-form">
+  <section class="container global-categories">
 
-    <h3>Preencha os campos abaixo para enviar sua receita</h3>
+    <div class="div-title-categories">
+      <h2>Fitness</h2>
+      <img src="../../Icons/undraw_working_out_re_nhkg 1.png" alt="">
+    </div>
 
-    <form action="">
+    <div class="cont-recipes-categories">
 
-      <div class="name-list">
-        <label for="name-recipe">Nome da receita:</label>
-        <input id="name-recipe" name="name-recipe" type="text">
+        <div class="recipe-categoy1">
+  
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+  
+          <a href="../recipes/fitness-pancake-with-fruits.html">
+            <img width="270" height="154" src="../../imagens/panquecas-de-close-up-com-frutas.jpg" alt="">
+          </a>
+  
+          <h4>
+            Panqueca fit com frutas
+          </h4>
+  
+        </div>
+  
+        <div class="recipe-categoy2">
+  
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+  
+          <a href="../recipes/fitness-pancake.html">
+            <img width="270" height="154" src="../../imagens/panqueca-fit-2.png" alt="">
+          </a>
+  
+          <h4>
+            Panqueca fitness
+          </h4>
+  
+        </div>
+  
+        <div class="recipe-categoy3">
+  
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+  
+          <a href="../../pages/recipes/omelette-in-oven.html">
+            <img width="270" height="154" src="../../imagens/omelete-de-ovos-fritos-em-prato-branco 1.png" alt="">
+          </a>
+  
+          <h4>
+            Omelete no forno
+          </h4>
+  
+        </div>
 
-        <label for="list-ingredients">Lista de ingredientes:</label>
-        <textarea id="list-ingredients" name="list-ingredients"></textarea>
-      </div>
+    </div>
 
-      <div class="img-preparation">
-        <label>Imagem da receita:</label>
-        <label for="recipe-img">Escolher imagem</label>
-        <input id="recipe-img" name="recipe-img" type="file" accept="image/*" capture="environment">
-
-        <label for="method-preparation">Modo de preparo:</label>
-        <textarea id="method-preparation" name="method-preparation"></textarea>
-      </div>
-
-      <input class="" type="submit" value="Enviar">
-
-    </form>
 
   </section>
 
+  <div class="div-btn-carregar-mais">
+    <button class="btn-carregar-mais">
+      Carregar mais
+    </button>
+  </div>
+
   <div id="all-recipes-section02">
-    <a href="../index.html">Voltar a página principal</a>
+    <a href="../all-Recipes.html">Ir para todas as receitas</a>
   </div>
   <hr class="hr">
 
   <a href="" id="by-pedro-henrique">By <span>Pedro Henrique</span></a>
 
+  <script src="../../index.js" type="module"></script>
+
+
 </body>
-<!-- Scrits js -->
-<script src="../index.js" type="module"></script>
 </html>
