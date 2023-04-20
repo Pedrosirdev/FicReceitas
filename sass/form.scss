@@ -1,6 +1,31 @@
 @use "variaveis";
 
 // ESTILOS GLOBAIS
+#notification-form{
+  margin-top: -100%;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  position: fixed;
+  color: #000;
+  p{
+    i{
+      font-size: 30px;
+    }
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    background-color: variaveis.$color-stars;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+
+  }
+
+}
 
 #container-form{
   display: flex;
@@ -101,6 +126,13 @@
 
 
 }
+#confirm-notification-form{
+  border-radius: 30px;
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  width: 60px;
+}
 
 
             /*media queries*/
@@ -138,6 +170,13 @@
     }
   }
 
+  #notification-form{
+    p{
+      margin-top: 80px;
+      width: 70%;
+    }
+  }
+
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -170,6 +209,12 @@
       .img-preparation{
         width: 100%;
       }
+    }
+  }
+  #notification-form{
+    p{
+      margin-top: 80px;
+      width: 70%;
     }
   }
 }
@@ -206,6 +251,12 @@
       }
     }
   }
+  #notification-form{
+    p{
+      margin-top: 80px;
+      width: 50%;
+    }
+  }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -238,6 +289,13 @@
       .img-preparation{
         width: 45%;
       }
+    }
+  }
+
+  #notification-form{
+    p{
+      margin-top: 80px;
+      width: 40%;
     }
   }
 

@@ -1,4 +1,5 @@
 export { globalFunctionCarousel }
+// export { notificationForm }
 
 
 const radio1   = document.querySelector('#radio1')
@@ -64,3 +65,20 @@ const autoBtn4 = document.querySelector('.auto-btn4')
 
     nextImage()
   }
+
+  // function notificationForm (){
+  //   const notificationForm = document.getElementById("notification-form")
+  //   const btnConfirmNotification = document.getElementById("confirm-notification-form")
+  //   const sendForm = document.getElementById("send-form")
+  
+  //   sendForm.addEventListener("click", (ev) => {
+  //     ev.preventDefault()
+  //     notificationForm.classList.add("show-notification-form")
+  //   })
+  
+  //   btnConfirmNotification.addEventListener("click", (ev) => {
+  //     ev.preventDefault()
+  //     notificationForm.classList.remove("show-notification-form")
+  //   })
+  // }
+  
