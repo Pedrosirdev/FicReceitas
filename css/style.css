@@ -35,6 +35,10 @@
     visibility: visible;
     margin-top: -40%;
   }
+  60% {
+    visibility: visible;
+    margin-top: -30%;
+  }
   75% {
     visibility: visible;
     margin-top: 2%;
@@ -581,6 +585,8 @@
 /*X-Large devices (large desktops, 1200px and up)*/
 /*XX-Large devices (larger desktops, 1400px and up)*/
 #notification-form {
+  z-index: 100;
+  visibility: hidden;
   margin-top: -100%;
   transition: 0.3s ease-in-out;
   display: flex;

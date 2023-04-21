@@ -1,5 +1,4 @@
 export { globalFunctionCarousel }
-// export { notificationForm }
 
 
 const radio1   = document.querySelector('#radio1')
@@ -57,7 +56,7 @@ const autoBtn4 = document.querySelector('.auto-btn4')
 
   function nextImage() {
     count++
-    if(count > 5){
+    if(count > 4){
       count = 1
     }
     document.getElementById("radio"+count).checked = true
@@ -65,20 +64,3 @@ const autoBtn4 = document.querySelector('.auto-btn4')
 
     nextImage()
   }
-
-  // function notificationForm (){
-  //   const notificationForm = document.getElementById("notification-form")
-  //   const btnConfirmNotification = document.getElementById("confirm-notification-form")
-  //   const sendForm = document.getElementById("send-form")
-  
-  //   sendForm.addEventListener("click", (ev) => {
-  //     ev.preventDefault()
-  //     notificationForm.classList.add("show-notification-form")
-  //   })
-  
-  //   btnConfirmNotification.addEventListener("click", (ev) => {
-  //     ev.preventDefault()
-  //     notificationForm.classList.remove("show-notification-form")
-  //   })
-  // }
-  
