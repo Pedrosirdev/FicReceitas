@@ -1,15 +1,9 @@
-import { navbar, searchBarIcon } from "./navbar.js";
-
-navbar()
-searchBarIcon()
-
-
 function notificationForm (){
   const notificationForm = document.getElementById("notification-form")
   const btnConfirmNotification = document.getElementById("confirm-notification-form")
-  const sendForm = document.getElementById("send-form")
+  const btnLoadMore = document.querySelector(".btn-carregar-mais")
 
-  sendForm.addEventListener("click", (ev) => {
+  btnLoadMore.addEventListener("click", (ev) => {
     ev.preventDefault()
     notificationForm.classList.add("show-notification-form")
   })
