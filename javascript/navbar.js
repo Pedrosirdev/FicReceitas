@@ -64,7 +64,7 @@ function navbar(){
 }
 
 function searchBarIcon(){
-  let searchBarIcon = document.querySelector('#search-bar-icon')
+  let searchBarIcon = document.querySelector('.search-bar-icon')
   let searchContainer = document.querySelector('.search-container')
 
   searchBarIcon.addEventListener('click', () => {

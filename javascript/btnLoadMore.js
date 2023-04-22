@@ -17,3 +17,6 @@ function notificationForm (){
 }
 
 notificationForm()
+
+const teste = "nada"
+console.log(teste)

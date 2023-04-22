@@ -73,4 +73,7 @@ nextImage()
 
 carousel()
 
+// Ferramenta de pesquisar
+// searchGlobal()
+
 

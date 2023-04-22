@@ -1275,7 +1275,7 @@ a {
   font-size: 18px;
   color: rgb(89, 34, 2);
 }
-#links-navbar #search-bar-icon:hover {
+#links-navbar .search-bar-icon:hover {
   cursor: pointer;
 }
 #links-navbar .search-container {
