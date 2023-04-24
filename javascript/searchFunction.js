@@ -1,16 +1,18 @@
 
-const searchInput = document.querySelector(".input-search")
+const searchInput = document.querySelectorAll(".input-search").forEach().addEventListener('input', search)
 
-searchInput.addEventListener('input', search)
+// searchInput
+
 
 function search(){
   const query = searchInput.value.toLowerCase()
 
   const pages = {
-    'Pão de queijo': '../pages/recipes/cheese-bread.html',
-    'cheese bread': '../pages/recipes/cheese-bread.html',
+    'pão de queijo': cheeseBread.path,
+    'pao de queijo': cheeseBread.path,
+    'cheese bread': cheeseBread.path,
 
-    'filé de peixe': '../pages/recipes/fish-fillet.html',
+    'file de peixe': '../pages/recipes/fish-fillet.html',
     'fish fillet': '../pages/recipes/fish-fillet.html'
   }
   const url = pages[query]
@@ -31,6 +33,18 @@ function search(){
   //   })
   // })
   
+
+class Recipes{
+  constructor( name, id, path ){
+    this.name = name
+    this.id = id
+    this.path = path
+  }
+}
+
+const cheeseBread = new Recipes('Pão de queijo', 1, '../pages/recipes/cheese-bread.html')
+
+console.log(cheeseBread)
 
 
 
