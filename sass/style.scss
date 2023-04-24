@@ -33,7 +33,32 @@ a{
     text-decoration: underline;
   }
 }
+.div-suggestions{
+  color:rgb(0, 0, 0);
+  background-color: #fff;
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  flex-direction: column;
+  padding: 3px;
+  z-index: 22022;
+  position: relative;
+  gap: 2px;
 
+  span{
+    padding:3px;
+  }
+
+  span:hover{
+      background-color: variaveis.$color-light;
+      border-radius: 0px !important;
+  }
+}
+.div-suggestions:hover{
+  border-radius: 0px !important;
+  scale: initial !important;
+  border-radius: 0px 0px 10px 10px !important;
+
+}
 // -- NAVBAR
 #navbar{
   padding: 10px;

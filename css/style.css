@@ -1255,6 +1255,31 @@ a {
   text-decoration: underline;
 }
 
+.div-suggestions {
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  flex-direction: column;
+  padding: 3px;
+  z-index: 22022;
+  position: relative;
+  gap: 2px;
+}
+.div-suggestions span {
+  padding: 3px;
+}
+.div-suggestions span:hover {
+  background-color: rgb(217, 217, 217);
+  border-radius: 0px !important;
+}
+
+.div-suggestions:hover {
+  border-radius: 0px !important;
+  scale: initial !important;
+  border-radius: 0px 0px 10px 10px !important;
+}
+
 #navbar {
   padding: 10px;
   display: flex;

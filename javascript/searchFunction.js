@@ -1,16 +1,43 @@
 
-const searchInput = document.querySelectorAll(".input-search").forEach().addEventListener('input', search)
+const searchInput = document.querySelectorAll(".input-search")
+const searchIcon = document.querySelector(".search-bar-icon")
 
-// searchInput
+// searchInput.addEventListener("input", search)
+
+searchIcon.addEventListener("click", () => {
+  searchIcon.classList.toggle('active')
+  if(searchIcon.classList.contains('active')){
+    searchInput.forEach((input) =>{
+      input.focus()
+    })
+  }
+})
+
+// searchIcon.forEach((icon) => {
+//   icon.addEventListener('click', () => {
+//     searchIcon.classList.toggle('active')
+//     if(searchIcon.classList.contains('active')){
+//       searchInput.focus()
+//     }
+//   })
+// })
+
+searchInput.forEach((input) =>{
+  input.addEventListener('input', search)
+})
 
 
 function search(){
-  const query = searchInput.value.toLowerCase()
+  let query = '';
+  searchInput.forEach((input) => {
+    query += input.value.toLowerCase();
+  });
+
 
   const pages = {
-    'pão de queijo': cheeseBread.path,
-    'pao de queijo': cheeseBread.path,
-    'cheese bread': cheeseBread.path,
+    'pão de queijo': '../pages/recipes/cheese-bread.html',
+    'pao de queijo': '../pages/recipes/cheese-bread.html',
+    'cheese bread': '../pages/recipes/cheese-bread.html',
 
     'file de peixe': '../pages/recipes/fish-fillet.html',
     'fish fillet': '../pages/recipes/fish-fillet.html'
@@ -34,17 +61,17 @@ function search(){
   // })
   
 
-class Recipes{
-  constructor( name, id, path ){
-    this.name = name
-    this.id = id
-    this.path = path
-  }
-}
+// class Recipes{
+//   constructor( name, id, path ){
+//     this.name = name
+//     this.id = id
+//     this.path = path
+//   }
+// }
 
-const cheeseBread = new Recipes('Pão de queijo', 1, '../pages/recipes/cheese-bread.html')
+// const cheeseBread = new Recipes('Pão de queijo', 1, '../pages/recipes/cheese-bread.html')
 
-console.log(cheeseBread)
+// console.log(cheeseBread)
 
 
 

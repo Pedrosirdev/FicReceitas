@@ -304,6 +304,10 @@
     gap: 20px;
     padding: 0px;
   }
+  .div-suggestions {
+    bottom: 131.1em;
+    left: -5.3em;
+  }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
@@ -331,6 +335,10 @@
   .container-bem-avaliadas .cont-receita-avaliada6 h4 {
     font-size: 22px;
   }
+  .div-suggestions {
+    bottom: 101.1em;
+    left: 9em;
+  }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
@@ -342,6 +350,10 @@
   }
   #section-02 .container-cards {
     gap: 50px;
+  }
+  .div-suggestions {
+    bottom: 101.1em;
+    left: 18.5em;
   }
 }
 
