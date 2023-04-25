@@ -1,7 +1,5 @@
-
-const searchInput = document.querySelectorAll(".input-search")
+const searchInput = document.querySelector(".input-search")
 const searchIcon = document.querySelector(".search-bar-icon")
-
 // searchInput.addEventListener("input", search)
 
 searchIcon.addEventListener("click", () => {
@@ -75,31 +73,108 @@ function search(){
 // console.log(cheeseBread)
 
 
-const divSuggestions = document.querySelector('.div-suggestions')
+// const divSuggestions = document.querySelector('.div-suggestions')
 
-searchInput.forEach((input) =>{
-  input.addEventListener('input', showSuggestions )
-})
+// searchInput.forEach((input) =>{
+//   input.addEventListener('input', showSuggestions )
+// })
 
-function showSuggestions(){
-  divSuggestions.classList.remove('d-none')
-  divSuggestions.classList.remove('hidden')
+// function showSuggestions(){
+//   divSuggestions.classList.remove('d-none')
+//   divSuggestions.classList.remove('hidden')
 
-  const span1 = document.createElement('span')
-  span1.textContent = 'abacate'
+//   const span1 = document.createElement('span')
+//   span1.textContent = 'abacate'
 
-  if(searchInput){
+//   if(searchInput){
 
-  divSuggestions.appendChild(span1)
+//   divSuggestions.appendChild(span1)
+//   }
+
+//   // let query = '';
+//   // searchInput.forEach((input) => {
+//   //   query += input.value.toLowerCase();
+//   // });
+//   // const filterRecipes = pages.filter(page => page.name.toLowerCase().includes(query))
+
+// }
+function autocomplete(input, array) {
+  let currentFocus;
+
+  input.addEventListener('input', () => {
+    let divSuggestions, b, i, val = input.value
+
+    closeAllLists();
+    if(!val){ return false; }
+    currentFocus = -1;
+    divSuggestions = document.createElement('div');
+    divSuggestions.setAttribute('class', this.classList + "autocomplete-list autocomplete-items");
+    this.parentNode.appendChild(divSuggestions);
+
+    for(i = 0; i < array.length; i++){
+      if(array[i].substr(0, val.length).toUpperCase() == val.toUpperCase()){
+        b = document.createElement('div');
+        b.innerHTML = "<strong>" + array[i].substr(0, val.length) + "</strong>";
+        b.innerHTML += array[i].substr(val.length);
+        b.innerHTML += "<input type='hidden' value='" + array[i] + "'>";
+        b.addEventListener('click', (ev) => {
+          input.value = this.getElementsByTagName('input')[0].value;
+          closeAllLists();
+        });
+        divSuggestions.appendChild(b);
+      }
+    }
+  });
+
+  input.addEventListener('keydown', (ev) => {
+    let x = document.getElementsByClassName(this.classList + 'autocomplete-list');
+    if(x) x = x.getElementsByTagName('div');
+    if(ev.keyCode == 40){
+      currentFocus++;
+      addActive(x);
+    } else if(ev.keyCode == 38){
+      currentFocus--;
+      addActive(x);
+    } else if(ev.keyCode == 13){
+      ev.preventDefault();
+      if(currentFocus > -1){
+        if(x) x[currentFocus].click()
+      }
+    }
+  });
+
+  function addActive(x){
+    if(!x) return false;
+    removeActive(x);
+    if(currentFocus >= x.length) currentFocus = 0;
+    if(currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add('autocomplete-active');
+  }
+  function removeActive(x) {
+    for(let i = 0; i < x.length; i++) {
+      x[i].classList.remove('autocomplete-active');
+    }
+  }
+  function closeAllLists(element) {
+    let x = document.getElementsByClassName('autocomplete-items');
+    for (let i = 0; i < x.length; i++) {
+      if(element != x[i] && element != input){
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
   }
 
-  // let query = '';
-  // searchInput.forEach((input) => {
-  //   query += input.value.toLowerCase();
-  // });
-  // const filterRecipes = pages.filter(page => page.name.toLowerCase().includes(query))
-
+  document.addEventListener('click', (ev)=> {
+    closeAllLists(ev.target);
+  });
 }
+
+
+let recipes = [
+  'Pao de queijo', 'Filé de peixe', 'Pizza de chocolate' 
+]
+
+autocomplete(searchInput[0], searchInput[1], recipes);
 
 
 
