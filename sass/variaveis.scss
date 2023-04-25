@@ -19,6 +19,9 @@ $font-titles: 'Quintessential', cursive;
 .visibleD{
   display: inline-block;
 }
+.hidden{
+  display: ruby;
+}
 .hidden-offcanvas{
   transform: translateY(-150%);
   margin-top: -100vh;
