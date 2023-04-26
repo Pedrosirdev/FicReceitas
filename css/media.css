@@ -26,6 +26,60 @@
   overflow: hidden;
 }
 
+.navbar-mobile-default {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.navbar-mobile-default ul li:first-child {
+  position: absolute;
+  right: 78%;
+  top: 244%;
+  width: 120px;
+  border: 1px solid red;
+}
+.navbar-mobile-default #links-navbar {
+  transform: translateY(-150%);
+  margin-top: -100vh;
+  border: 1px solid blue;
+  position: relative;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.navbar-mobile-offcanvas {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.navbar-mobile-offcanvas ul li:first-child {
+  position: absolute;
+  right: 78%;
+  top: 244%;
+  width: 120px;
+  border: 1px solid red;
+}
+.navbar-mobile-offcanvas #links-navbar {
+  transform: translateY(-150%);
+  margin-top: -100vh;
+  border: 1px solid blue;
+  position: relative;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
 .show-notification-form {
   animation: fade-in 1 linear forwards;
   animation-duration: 2s;
@@ -62,8 +116,200 @@
   #small, #medium, #large, #x-large, #xx-large {
     display: none;
   }
+  #navbar {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+  }
+  #navbar ul li:first-child {
+    position: absolute;
+    right: 78%;
+    top: 244%;
+    width: 120px;
+    border: 1px solid red;
+  }
+  #navbar .logo-link {
+    margin: 0 auto;
+  }
+  #navbar .logo-link .logo {
+    width: 100%;
+  }
+  #navbar button {
+    border: 1px solid yellow;
+    align-self: flex-end;
+  }
   #links-navbar {
+    border: 1px solid blue;
+    position: relative;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+  }
+  #links-navbar i {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(89, 34, 2);
+  }
+  #links-navbar .search-bar-icon:hover {
+    cursor: pointer;
+  }
+  #links-navbar .search-container {
+    max-width: 30px;
+    border-radius: 30px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.8s ease;
+    position: relative;
+  }
+  #links-navbar .search-container input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: transparent;
+    color: #000;
+  }
+  #links-navbar .search-container.active {
+    max-width: 300px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  #links-navbar .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  #links-navbar .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  #links-navbar .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+  #links-navbar .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+  #links-navbar a {
+    color: rgb(89, 34, 2);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  #links-navbar :hover {
+    color: rgb(191, 129, 75);
+  }
+  #links-navbar img {
+    width: 85%;
+    height: 90%;
+  }
+  #links-navbar .dropdown-category {
     display: none;
+    position: absolute;
+    left: 28%;
+    background-color: #f1f1f1;
+    max-width: 45%;
+    max-height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 20px 5px;
+    border-radius: 0px 0 30px 30px;
+  }
+  #links-navbar .dropdown-category a {
+    color: rgb(89, 34, 2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  #links-navbar .dropdown-category :hover {
+    color: rgb(191, 129, 75);
+  }
+  #navbar-offcanvas {
+    transition: 0.7s ease;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  #navbar-offcanvas #links-navbar-offcanvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    height: 100%;
+    width: 95%;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  #navbar-offcanvas #links-navbar-offcanvas a {
+    color: rgb(89, 34, 2);
+    font-weight: 500;
+  }
+  #navbar-offcanvas #links-navbar-offcanvas :hover {
+    color: rgb(191, 129, 75);
+  }
+  #navbar-offcanvas #links-navbar-offcanvas div {
+    background: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  #navbar-offcanvas #links-navbar-offcanvas input {
+    display: inline-block;
+    border: none;
+    padding-left: 10px;
+    border-radius: 30px;
+    height: 25px;
+  }
+  #navbar-offcanvas #links-navbar-offcanvas :focus {
+    outline: none;
+  }
+  #navbar-offcanvas #links-navbar-offcanvas img {
+    width: 24px;
+    height: 24px;
+  }
+  #navbar-offcanvas #links-navbar-offcanvas .dropdown-category-offcanvas {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    padding: 150px 10px 0px 10px;
+    height: 220px;
+  }
+  #navbar-offcanvas #links-navbar-offcanvas .dropdown-category-offcanvas a {
+    padding: 0.1em;
+    margin: 0.1em;
+  }
+  #navbar-offcanvas #category-offcanvas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
   }
   #section-02 .container-cards {
     display: flex;
@@ -152,8 +398,118 @@
   #x-small, #medium, #large, #x-large, #xx-large {
     display: none;
   }
+  #navbar {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar .logo-link {
+    margin: 0 auto;
+  }
+  #navbar .logo-link .logo {
+    width: 100%;
+  }
+  #navbar button {
+    align-self: flex-end;
+  }
   #links-navbar {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+  }
+  #links-navbar i {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(89, 34, 2);
+  }
+  #links-navbar .search-bar-icon:hover {
+    cursor: pointer;
+  }
+  #links-navbar .search-container {
+    max-width: 30px;
+    border-radius: 30px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.8s ease;
+    position: relative;
+  }
+  #links-navbar .search-container input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: transparent;
+    color: #000;
+  }
+  #links-navbar .search-container.active {
+    max-width: 300px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  #links-navbar .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  #links-navbar .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  #links-navbar .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+  #links-navbar .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+  #links-navbar a {
+    color: rgb(89, 34, 2);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  #links-navbar :hover {
+    color: rgb(191, 129, 75);
+  }
+  #links-navbar img {
+    width: 85%;
+    height: 90%;
+  }
+  #links-navbar .dropdown-category {
     display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    max-width: 45%;
+    max-height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 20px 5px;
+    border-radius: 30px 0 30px 30px;
+  }
+  #links-navbar .dropdown-category a {
+    color: rgb(89, 34, 2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  #links-navbar .dropdown-category :hover {
+    color: rgb(191, 129, 75);
   }
   .container-bem-avaliadas {
     display: flex;
@@ -200,8 +556,119 @@
   #x-small, #small, #large, #x-large, #xx-large {
     display: none;
   }
+  #navbar {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar .logo-link {
+    margin: 0 auto;
+  }
+  #navbar .logo-link .logo {
+    width: 100%;
+  }
+  #navbar button {
+    align-self: flex-end;
+  }
   #links-navbar {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+  }
+  #links-navbar i {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(89, 34, 2);
+  }
+  #links-navbar .search-bar-icon:hover {
+    cursor: pointer;
+  }
+  #links-navbar .search-container {
+    max-width: 30px;
+    border-radius: 30px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.8s ease;
+    position: relative;
+  }
+  #links-navbar .search-container input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: transparent;
+    color: #000;
+  }
+  #links-navbar .search-container.active {
+    max-width: 300px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  #links-navbar .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  #links-navbar .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  #links-navbar .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+  #links-navbar .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+  #links-navbar a {
+    color: rgb(89, 34, 2);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  #links-navbar :hover {
+    color: rgb(191, 129, 75);
+  }
+  #links-navbar img {
+    width: 85%;
+    height: 90%;
+  }
+  #links-navbar .dropdown-category {
     display: none;
+    position: absolute;
+    left: 28%;
+    background-color: #f1f1f1;
+    max-width: 45%;
+    max-height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 20px 5px;
+    border-radius: 0px 0 30px 30px;
+  }
+  #links-navbar .dropdown-category a {
+    color: rgb(89, 34, 2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  #links-navbar .dropdown-category :hover {
+    color: rgb(191, 129, 75);
   }
   #section-02 .container-cards {
     display: grid;
@@ -273,8 +740,126 @@
   #x-small, #small, #medium, #x-large, #xx-large {
     display: none;
   }
+  #navbar {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #navbar #category {
+    padding-bottom: 0px;
+  }
+  #navbar ul li:first-child {
+    position: absolute;
+    right: 85%;
+    width: 120px;
+  }
+  #navbar .logo-link .logo {
+    width: 100%;
+  }
+  #navbar button {
+    align-self: flex-end;
+  }
   #links-navbar {
-    display: inherit;
+    position: relative;
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 4em;
+    align-items: center;
+  }
+  #links-navbar i {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(89, 34, 2);
+  }
+  #links-navbar .search-bar-icon:hover {
+    cursor: pointer;
+  }
+  #links-navbar .search-container {
+    max-width: 30px;
+    border-radius: 30px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.8s ease;
+    position: relative;
+  }
+  #links-navbar .search-container input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: transparent;
+    color: #000;
+  }
+  #links-navbar .search-container.active {
+    max-width: 300px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  #links-navbar .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  #links-navbar .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  #links-navbar .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+  #links-navbar .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+  #links-navbar a {
+    color: rgb(89, 34, 2);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  #links-navbar :hover {
+    color: rgb(191, 129, 75);
+  }
+  #links-navbar img {
+    width: 85%;
+    height: 90%;
+  }
+  #links-navbar .dropdown-category {
+    display: none;
+    position: absolute;
+    left: 60%;
+    background-color: #f1f1f1;
+    max-width: 45%;
+    max-height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 20px 5px;
+    border-radius: 30px 0 30px 30px;
+  }
+  #links-navbar .dropdown-category a {
+    color: rgb(89, 34, 2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  #links-navbar .dropdown-category :hover {
+    color: rgb(191, 129, 75);
   }
   #btn-menu, #navbar-offcanvas {
     display: none;

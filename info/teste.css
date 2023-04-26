@@ -64,9 +64,8 @@ input[type=submit] {
   nav{
     border: 1px solid rgb(3, 144, 156);
     margin: 10px 50px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
     padding: 5px 30px;
   
   }
@@ -76,7 +75,8 @@ input[type=submit] {
   nav button:first-child{
     background-color: blueviolet;
     width: 15em;
-    align-self: flex-end;
+    /* display: none; */
+    justify-self: end;
   }
   nav div:nth-child(2){
     background-color: #0000ff;
@@ -88,7 +88,7 @@ input[type=submit] {
     width: 15em;
     justify-self: center;
     
-display: none;
+/* display: none; */
     align-self: center;
 
 
@@ -121,7 +121,7 @@ display: none;
   nav div:last-child{
     background-color: rgb(41, 107, 38);
     width: 15em;
-    justify-self: center;
+    /* justify-self: center; */
   }
   nav div ul{
     display: flex;
@@ -131,6 +131,43 @@ display: none;
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  nav{
+    border: 1px solid rgb(3, 144, 156);
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 30px;
+    align-items: end;
+  }
+  nav div{
+    width: 15em;
+  }
+  nav button:first-child{
+    background-color: blueviolet;
+    width: 15em;
+    /* display: none; */
+    align-self: center;
+  }
+  nav div:nth-child(2){
+    background-color: #0000ff;
+    width: 15em;
+    /* justify-self: start; */
+  }
+  nav div:last-child{
+    background-color: rgb(41, 107, 38);
+    width: 15em;
+    /* justify-self: center; */
+    
+/* display: none; */
+    align-self: self-start;
+
+
+  }
+  nav div ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+  }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
