@@ -27,10 +27,12 @@
       <!-- HEADER -->
   <!-- NAVBAR -->
   <nav id="navbar" class="container">
+  
     <a class="logo-link" href="../index.html">
       <img id="logo" class="logo" src="../imagens/Logo-FicReceitas.png" alt="">
     </a>
-    <ul id="links-navbar">
+
+    <ul class="hidden-offcanvas" id="links-navbar">
       <li class="search-container">
           <i class="bi bi-search search-bar-icon"></i>
           <input placeholder="Pão de queijo..." class="input-search" type="text">
@@ -42,7 +44,7 @@
         <a href="./categories/healthy.html">SAUDÁVEIS</a>
       </li>
       <li>
-        <a href="./categories/fitness.html">FÁCEIS</a>
+        <a href="./categories/easy.html">FÁCEIS</a>
       </li>
       <li id="category">
         <a id="category-link">CATEGORIAS<i class="bi bi-caret-down-fill"></i></a>
@@ -63,59 +65,14 @@
       </li>
     </ul>
 
-    <button id="btn-menu">
-      <img src="../Icons/btn-menu.png" alt="">
-    </button>
-
-    <button class="none" id="btn-close">
-      <i class="bi bi-x-lg"></i>
-    </button>
+    <div class="hamburguer">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
 
   </nav>
   <!-- FIM NAVBAR -->
-  <!-- MENU OFFCANVAS -->
-  <nav class="hidden-offcanvas" id="navbar-offcanvas">
-    <a class="logo-link" href="../../index.html">
-      <img class="logo" src="../imagens/Logo-FicReceitas.png" alt="">
-    </a>
-    <ul id="links-navbar-offcanvas">
-      <li>
-        <div>
-          <input type="text" placeholder="Pão de queijo..." name="" id="" class="input-search">
-          <img src="../Icons/search 1.png" alt="">
-        </div>
-      </li>
-      <li>
-        <a href="./categories/fitness.html">FIT</a>
-      </li>
-      <li>
-        <a href="./categories/healthy.html">SAUDÁVEIS</a>
-      </li>
-      <li>
-        <a href="">FÁCEIS</a>
-      </li>
-      <li id="category-offcanvas">
-        <a class="category-links-offcanvas" href="">CATEGORIAS<i class="bi bi-caret-down-fill"></i></a>
-      </li>
-      <div id="dropdown-category-offcanvas" class="none">
-        <a id="fit-offcanvas" href="./categories/fitness.html">Fit</a>
-        <a href="./categories/healthy.html">Saudáveis</a>
-        <a href="./categories/breakfast.html">Café da manhã</a>
-        <a href="./categories/pastas.html">Massas</a>
-        <a href="./categories/pizzas.html">Pizzas</a>
-        <a href="./categories/savory.html">Salgados</a>
-        <a href="./categories/easy.html">Fáceis</a>
-        <a href="./categories/breads.html">Pães</a>
-        <a href="./categories/broths-and-soups.html">Caldos e Sopas</a>
-        <a href="./categories/meat.html">Carnes</a>
-        <a href="./categories/candy.html">Doces</a>
-        <a href="./categories/desserts.html">Sobremesas</a>
-      </div>
-    </ul>
-  </nav>
-  <!-- FIM MENU OFFCANVAS -->
 
-  <!-- FIM NAVBAR -->
   <!-- FIM HEADER -->
 
   <section class="container" id="sectionAllRecipes">

@@ -1,4 +1,5 @@
 import { searchBarIcon, navbar } from "./navbar.js";
+import { globalSearchFunction } from "./searchFunction.js";
 
 const radio1   = document.querySelector('#radio1')
 const autoBtn1 = document.querySelector('.auto-btn1')
@@ -74,6 +75,6 @@ nextImage()
 carousel()
 
 // Ferramenta de pesquisar
-// searchGlobal()
+globalSearchFunction()
 
 

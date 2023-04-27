@@ -17,6 +17,10 @@
     display: flex;
     justify-content: space-between;
 
+    .search-bar-icon{
+      pointer-events: none;
+    }
+
     .logo-link{
       width: 33.3333333333%;
       height: 54px;
@@ -85,7 +89,6 @@
       padding-left: 5px;
       display: flex;
       align-items: center;
-      overflow: hidden;
       transition: 0.8s ease;
       position: relative;
   
@@ -278,6 +281,10 @@
     display: flex;
     justify-content: space-between;
 
+    .search-bar-icon{
+      pointer-events: none;
+    }
+
     .logo-link{
       width: 33.3333333333%;
       height: 54px;
@@ -347,7 +354,6 @@
       padding-left: 5px;
       display: flex;
       align-items: center;
-      overflow: hidden;
       transition: 0.8s ease;
       position: relative;
 
@@ -467,6 +473,10 @@
     display: flex;
     justify-content: space-between;
 
+    .search-bar-icon{
+      pointer-events: none;
+    }
+
     .logo-link{
       width: 33.3333333333%;
       height: 54px;
@@ -535,7 +545,6 @@
       padding-left: 5px;
       display: flex;
       align-items: center;
-      overflow: hidden;
       transition: 0.8s ease;
       position: relative;
   
@@ -696,6 +705,10 @@
     align-items: center;
     justify-content: space-between;
 
+    .search-bar-icon{
+      pointer-events: all;
+    }
+
     #category {
       padding-bottom: 0px;
     }
@@ -758,7 +771,6 @@
       padding-left: 5px;
       display: flex;
       align-items: center;
-      overflow: hidden;
       transition: 0.8s ease;
       position: relative;
   
@@ -823,11 +835,6 @@
     display: inline-block;
   }
 
-  // OFFCANVAS
-  #btn-close{
-    display: none;
-  }
-
   // RODAPÉ
   .footer{
     padding-top: 5em;
@@ -854,11 +861,6 @@
       }
     }
   }
-
-.div-suggestions{
-  bottom: 131.1em;
-  left: -5.3em;
-}
 
 }
 /*X-Large devices (large desktops, 1200px and up)*/
@@ -898,10 +900,6 @@
     }
   }
 }
-.div-suggestions{
-  bottom: 101.1em;
-  left: 9em;
-}
 
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
@@ -921,9 +919,4 @@
     }
   
   }
-
-.div-suggestions{
-  bottom: 101.1em;
-  left: 18.5em;
-}
 }

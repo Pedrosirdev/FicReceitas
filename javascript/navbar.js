@@ -32,7 +32,7 @@ function searchBarIcon(){
   let searchContainer = document.querySelector('.search-container')
 
   searchBarIcon.addEventListener('click', () => {
-  searchContainer.classList.toggle('active');
+    searchContainer.classList.toggle('active');
   })
 
   window.addEventListener('resize', function() {
@@ -45,4 +45,6 @@ function searchBarIcon(){
     }
   })
 }
+
+
 
