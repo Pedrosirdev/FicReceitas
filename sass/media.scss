@@ -15,15 +15,11 @@
     position: relative;
     padding: 30px 20px;
     display: flex;
-    // align-items: first baseline; 
-    // flex-direction: column-reverse;
     justify-content: space-between;
-    border: 1px solid red;
 
     .logo-link{
       width: 33.3333333333%;
       height: 54px;
-      border: 1px solid yellow;
       .logo{
         width: 110px;
         height: 54px;
@@ -36,7 +32,6 @@
       gap: -1px;
       align-items: flex-end;
       justify-content: center;
-      border: 1px solid rgb(203, 203, 179);
       width: 33.3333333333%;
       height: 54px;
       cursor: pointer;
@@ -61,27 +56,18 @@
     }
   }
   #links-navbar{
-    // transform: translateY(-150%);
-    // margin-top: -100vh;
-
-    // transform: translateY(3%);
-    // margin-top: 15vh;
-
     width: 33.3333333333%;
     height: 100vh;
     list-style-type: none;
     gap: 20px;
-    border: 1px solid blue;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     li{
-      border: 1px solid blueviolet;
       width: 200px;
       text-align: center;
-
     }
   
     i{
@@ -134,10 +120,11 @@
     .dropdown-category{
       display: none;
       position: absolute;
-      left: 0%;
+      overflow: scroll;
+      left: -20%;
       background-color: #f1f1f1;
       max-width: 200px;
-      max-height: 400px;
+      max-height: 250px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
       padding: 20px 5px;
@@ -289,23 +276,11 @@
     position: relative;
     padding: 30px 20px;
     display: flex;
-    // align-items: first baseline; 
-    // flex-direction: column-reverse;
     justify-content: space-between;
-    border: 1px solid red;
-
-    // ul li:first-child{
-    //   position: absolute;
-    //   right: 78%;
-    //   top: 244%;
-    //   width: 120px;
-    //   border: 1px solid red;
-    // }
 
     .logo-link{
       width: 33.3333333333%;
       height: 54px;
-      border: 1px solid yellow;
       .logo{
         width: 110px;
         height: 54px;
@@ -318,7 +293,6 @@
       gap: -1px;
       align-items: flex-end;
       justify-content: center;
-      border: 1px solid rgb(203, 203, 179);
       width: 33.3333333333%;
       height: 54px;
       cursor: pointer;
@@ -343,37 +317,30 @@
     }
   }
   #links-navbar{
-    // transform: translateY(-150%);
-    // margin-top: -100vh;
-
-        // transform: translateY(3%);
-        // margin-top: 15vh;
-        width: 33.3333333333%;
+    width: 33.3333333333%;
     height: 100vh;
     list-style-type: none;
     gap: 20px;
-    border: 1px solid blue;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     li{
-      border: 1px solid blueviolet;
       width: 200px;
       text-align: center;
-
     }
-  
+
     i{
       font-weight: 500;
       font-size: 18px;
       color: variaveis.$color-main1;
     }
+
     .search-bar-icon:hover{
       cursor: pointer;
     }
-  
+
     .search-container{
       max-width: 30px;
       border-radius: 30px;
@@ -383,7 +350,7 @@
       overflow: hidden;
       transition: 0.8s ease;
       position: relative;
-  
+
       input{
         outline: none;
         border: none;
@@ -393,13 +360,14 @@
         color: #000;
       }
     }
+
     .search-container.active{
       max-width: 300px;
       padding: 0 10px;
       background-color: #fff;
       border: 1px solid #fff;
     }
-  
+
     a{
       color: variaveis.$color-main1;
       font-weight: 500;
@@ -411,19 +379,20 @@
       width: 85%;
       height: 90%;
     }
-  
+
     .dropdown-category{
       display: none;
       position: absolute;
+      overflow: scroll;
       left: 0%;
       background-color: #f1f1f1;
       max-width: 200px;
-      max-height: 400px;
+      max-height: 250px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
       padding: 20px 5px;
       border-radius: 30px 0px 30px 30px;
-  
+
       a{
         color: variaveis.$color-main1;
         padding: 12px 16px;
@@ -496,15 +465,11 @@
     position: relative;
     padding: 30px 20px;
     display: flex;
-    // align-items: first baseline; 
-    // flex-direction: column-reverse;
     justify-content: space-between;
-    border: 1px solid red;
 
     .logo-link{
       width: 33.3333333333%;
       height: 54px;
-      border: 1px solid yellow;
       .logo{
         width: 110px;
         height: 54px;
@@ -517,7 +482,6 @@
       gap: -1px;
       align-items: flex-end;
       justify-content: center;
-      border: 1px solid rgb(203, 203, 179);
       width: 33.3333333333%;
       height: 54px;
       cursor: pointer;
@@ -542,27 +506,18 @@
     }
   }
   #links-navbar{
-    // transform: translateY(-150%);
-    // margin-top: -100vh;
-
-    // transform: translateY(3%);
-    // margin-top: 15vh;
-
     width: 33.3333333333%;
     height: 100vh;
     list-style-type: none;
     gap: 20px;
-    border: 1px solid blue;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     li{
-      border: 1px solid blueviolet;
       width: 200px;
       text-align: center;
-
     }
   
     i{
@@ -615,10 +570,11 @@
     .dropdown-category{
       display: none;
       position: absolute;
+      overflow: scroll;
       left: 10%;
       background-color: #f1f1f1;
       max-width: 150px;
-      max-height: 400px;
+      max-height: 300px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
       padding: 20px 5px;
@@ -737,17 +693,14 @@
     position: relative;
     padding: 5px 30px;
     display: flex;
-    // flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
 
     #category {
       padding-bottom: 0px;
     }
 
     .logo-link{
-      border: 1px solid yellow;
       height: 65px;
       width: auto;
       .logo{
@@ -759,8 +712,6 @@
     .hamburguer{
       display: none;
       cursor: pointer;
-      border: 1px solid yellow;
-
 
       .bar{
         display: block;
@@ -774,14 +725,13 @@
     }
   }
   #links-navbar{
-        transform: translateY(3%);
+    transform: translateY(3%);
     margin-top: 15vh;
     width: auto;
     list-style-type: none;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
     margin: 0px;
     padding-left: 0px;
     display: flex;
@@ -790,7 +740,6 @@
     z-index: 110;
 
     li{
-      border: 1px solid blueviolet;
       width: auto;
     }
   
@@ -846,6 +795,7 @@
     .dropdown-category{
       z-index: 100;
       display: none;
+      overflow: hidden;
       position: absolute;
       left: 0%;
       background-color: #f1f1f1;

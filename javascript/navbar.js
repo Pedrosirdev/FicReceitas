@@ -1,9 +1,7 @@
 export {  searchBarIcon, navbar }
 
-// const body = document.querySelector('body')
+const body = document.querySelector('body')
 const hamburguer = document.querySelector('.hamburguer')
-
-// const logo = document.querySelector('#logo')
 const linksNavbar = document.querySelector('#links-navbar')
 
 function navbar(){
@@ -11,36 +9,22 @@ function navbar(){
     ev.preventDefault()
       hamburguer.classList.toggle('active-close')
 
+      let searchContainer = document.querySelector('.search-container')
+      searchContainer.classList.add('active');
+
       linksNavbar.classList.toggle('show-offcanvas')
       linksNavbar.classList.toggle('hidden-offcanvas')
+      body.classList.toggle('no-scroll')
   })
 
-  // btnClose.addEventListener('click',(ev) => {
-  //   ev.preventDefault()
-  //   btnMenu.classList.remove('none')
-  //   btnClose.classList.add('none')
-  //   logo.classList.remove('none')
-  //   linksNavbar.classList.remove('show-offcanvas')
-  //   linksNavbar.classList.add('hidden-offcanvas')
-
-
-  //   body.classList.remove('no-scroll')
-  // })
-
-  // window.addEventListener('resize', function() {
-  //   const screen = window.innerWidth
-  //   if(screen > 992){
-  //     btnMenu.classList.remove('none')
-  //     btnClose.classList.add('none')
-  //     logo.classList.remove('none')
-  //     linksNavbar.classList.remove('hidden-offcanvas')
-  //     linksNavbar.classList.add('show-offcanvas')
-  //   }
-
-    
-  // })
-
-
+  window.addEventListener('resize', function() {
+    const screen = window.innerWidth
+    if(screen > 992){
+      linksNavbar.classList.add('hidden-offcanvas')
+      linksNavbar.classList.remove('show-offcanvas')
+      hamburguer.classList.remove('active-close')
+    }
+  })
 }
 
 function searchBarIcon(){

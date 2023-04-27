@@ -15,11 +15,13 @@
 .hidden-offcanvas {
   transform: translateY(-150%);
   margin-top: -100vh;
+  transition: all 0.5s ease-in-out;
 }
 
 .show-offcanvas {
   transform: translateY(3%);
   margin-top: 15vh;
+  transition: all 0.5s ease-in-out;
 }
 
 .no-scroll {

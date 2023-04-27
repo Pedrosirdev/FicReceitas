@@ -15,11 +15,13 @@
 .hidden-offcanvas {
   transform: translateY(-150%);
   margin-top: -100vh;
+  transition: all 0.5s ease-in-out;
 }
 
 .show-offcanvas {
   transform: translateY(3%);
   margin-top: 15vh;
+  transition: all 0.5s ease-in-out;
 }
 
 .no-scroll {
@@ -107,12 +109,10 @@
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
   }
   #navbar .logo-link {
     width: 33.3333333333%;
     height: 54px;
-    border: 1px solid yellow;
   }
   #navbar .logo-link .logo {
     width: 110px;
@@ -124,7 +124,6 @@
     gap: -1px;
     align-items: flex-end;
     justify-content: center;
-    border: 1px solid rgb(203, 203, 179);
     width: 33.3333333333%;
     height: 54px;
     cursor: pointer;
@@ -151,14 +150,12 @@
     height: 100vh;
     list-style-type: none;
     gap: 20px;
-    border: 1px solid blue;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   #links-navbar li {
-    border: 1px solid blueviolet;
     width: 200px;
     text-align: center;
   }
@@ -209,10 +206,11 @@
   #links-navbar .dropdown-category {
     display: none;
     position: absolute;
-    left: 0%;
+    overflow: scroll;
+    left: -20%;
     background-color: #f1f1f1;
     max-width: 200px;
-    max-height: 400px;
+    max-height: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 20px 5px;
@@ -319,12 +317,10 @@
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
   }
   #navbar .logo-link {
     width: 33.3333333333%;
     height: 54px;
-    border: 1px solid yellow;
   }
   #navbar .logo-link .logo {
     width: 110px;
@@ -336,7 +332,6 @@
     gap: -1px;
     align-items: flex-end;
     justify-content: center;
-    border: 1px solid rgb(203, 203, 179);
     width: 33.3333333333%;
     height: 54px;
     cursor: pointer;
@@ -363,14 +358,12 @@
     height: 100vh;
     list-style-type: none;
     gap: 20px;
-    border: 1px solid blue;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   #links-navbar li {
-    border: 1px solid blueviolet;
     width: 200px;
     text-align: center;
   }
@@ -421,10 +414,11 @@
   #links-navbar .dropdown-category {
     display: none;
     position: absolute;
+    overflow: scroll;
     left: 0%;
     background-color: #f1f1f1;
     max-width: 200px;
-    max-height: 400px;
+    max-height: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 20px 5px;
@@ -489,12 +483,10 @@
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
   }
   #navbar .logo-link {
     width: 33.3333333333%;
     height: 54px;
-    border: 1px solid yellow;
   }
   #navbar .logo-link .logo {
     width: 110px;
@@ -506,7 +498,6 @@
     gap: -1px;
     align-items: flex-end;
     justify-content: center;
-    border: 1px solid rgb(203, 203, 179);
     width: 33.3333333333%;
     height: 54px;
     cursor: pointer;
@@ -533,14 +524,12 @@
     height: 100vh;
     list-style-type: none;
     gap: 20px;
-    border: 1px solid blue;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   #links-navbar li {
-    border: 1px solid blueviolet;
     width: 200px;
     text-align: center;
   }
@@ -591,10 +580,11 @@
   #links-navbar .dropdown-category {
     display: none;
     position: absolute;
+    overflow: scroll;
     left: 10%;
     background-color: #f1f1f1;
     max-width: 150px;
-    max-height: 400px;
+    max-height: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 20px 5px;
@@ -685,13 +675,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
   }
   #navbar #category {
     padding-bottom: 0px;
   }
   #navbar .logo-link {
-    border: 1px solid yellow;
     height: 65px;
     width: auto;
   }
@@ -702,7 +690,6 @@
   #navbar .hamburguer {
     display: none;
     cursor: pointer;
-    border: 1px solid yellow;
   }
   #navbar .hamburguer .bar {
     display: block;
@@ -721,7 +708,6 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
     margin: 0px;
     padding-left: 0px;
     display: flex;
@@ -730,7 +716,6 @@
     z-index: 110;
   }
   #links-navbar li {
-    border: 1px solid blueviolet;
     width: auto;
   }
   #links-navbar i {
@@ -780,6 +765,7 @@
   #links-navbar .dropdown-category {
     z-index: 100;
     display: none;
+    overflow: hidden;
     position: absolute;
     left: 0%;
     background-color: #f1f1f1;
