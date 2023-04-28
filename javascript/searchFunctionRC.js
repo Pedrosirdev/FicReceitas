@@ -1,7 +1,7 @@
 const searchInput = document.querySelector(".input-search")
 const searchIcon = document.querySelector(".search-bar-icon")
 
-function globalSearchFunction(){
+function globalSearchFunctionRC(){
 
   searchIcon.addEventListener("click", () => {
     searchIcon.classList.toggle('active')
@@ -11,53 +11,54 @@ function globalSearchFunction(){
   })
   
   const pages = {
-    'fitness': '../pages/categories/fitness.html',
-    'saudáveis': '../pages/categories/healthy.html',
-    'café da manhã': '../pages/categories/breakfast.html',
-    'massas': '../pages/categories/pastas.html', 
-    'pizzas': '../pages/categories/pizzas.html', 
-    'salgados': '../pages/categories/savory.html',
-    'doces': '../pages/categories/candy.html',
-    'carnes': '../pages/categories/meat.html',
-    'fáceis': '../pages/categories/easy.html',
-    'pães': '../pages/categories/breads.html',  
-    'caldos e Sopas': '../pages/categories/broths-and-soups.html', 
-    'sobremesas': '../pages/categories/desserts.html',
+    'fitness': '../categories/fitness.html',
+    'saudáveis': '../categories/healthy.html',
+    'café da manhã': '../categories/breakfast.html',
+    'massas': '../categories/pastas.html', 
+    'pizzas': '../categories/pizzas.html', 
+    'salgados': '../categories/savory.html',
+    'doces': '../categories/candy.html',
+    'carnes': '../categories/meat.html',
+    'fáceis': '../categories/easy.html',
+    'pães': '../categories/breads.html',  
+    'caldos e Sopas': '../categories/broths-and-soups.html', 
+    'sobremesas': '../categories/desserts.html',
 
-    'panqueca fit com frutas': '../pages/recipes/fitness-pancake-with-fruits.html',
-    'panqueca fitness': '../pages/recipes/fitness-pancake.html',
-    'omelete no forno': '../pages/recipes/omelette-in-oven.html',
-    'salada com frango e abobrinha': '../pages/recipes/salad-with-chicken-and-zucchini.html',
-    'sopa de carne e legumes': '../pages/recipes/meat-and-vegetable-soup.html',
-    'pizza na frigideira': '../pages/recipes/pan-pizza.html',
-    'almôndegas em molho de tomate': '../pages/recipes/meatballs-in-tomato-sauce.html',
-    'macarrão com bacon': '../pages/recipes/bacon-pasta.html',
-    'macarrão penne com molho de tomate': '../pages/recipes/penne-pasta-with-tomato-sauce.html',
-    'macarrão com presunto e queijo': '../pages/recipes/macaroni-with-ham-and-cheese.html',
-    'pão de aveia': '../pages/recipes/oat-bread.html',
-    'pão doce': '../pages/recipes/sweet-bread.html',
-    'pão de alho': '../pages/recipes/garlic-bread.html',
-    'batatas fritas': '../pages/recipes/french-fries.html',
-    'bolinho de frango': '../pages/recipes/chicken-cakes.html',
-    'cheesecake de geleia com morangos': '../pages/recipes/cheesecake-strawberry-jam.html',
-    'torta de morango': '../pages/recipes/strawberry-pie.html',
-    'bolo de chocolate': '../pages/recipes/chocolate-cake.html',
-    'biscoitos de chocolate': '../pages/recipes/chocolate-cookies.html',
-    'linguiça na frigideira': '../pages/recipes/sausage-in-the-frying-pan.html',
-    'carne de porco assada com especiarias': '../pages/recipes/pork-roasted-with-spices.html',
-    'carne de porco assada com legumes': '../pages/recipes/roast-pork-with-vegetables.html',
-    'caldo de frango com batatas': '../pages/recipes/chicken-broth-with-potatoes.html',
-    'sopa de legumes': '../pages/recipes/vegetables-soup.html',
-    'pizza de chocolate': '../pages/recipes/chocolate-pizza.html',
-    'pizza de calabresa': '../pages/recipes/pepperoni-pizza.html',
+    'panqueca fit com frutas': '../recipes/fitness-pancake-with-fruits.html',
+    'panqueca fitness': '../recipes/fitness-pancake.html',
+    'omelete no forno': '../recipes/omelette-in-oven.html',
+    'salada com frango e abobrinha': '../recipes/salad-with-chicken-and-zucchini.html',
+    'sopa de carne e legumes': '../recipes/meat-and-vegetable-soup.html',
+    'pizza na frigideira': '../recipes/pan-pizza.html',
+    'almôndegas em molho de tomate': '../recipes/meatballs-in-tomato-sauce.html',
+    'macarrão com bacon': '../recipes/bacon-pasta.html',
+    'macarrão penne com molho de tomate': '../recipes/penne-pasta-with-tomato-sauce.html',
+    'macarrão com presunto e queijo': '../recipes/macaroni-with-ham-and-cheese.html',
+    'pão de aveia': '../recipes/oat-bread.html',
+    'pão doce': '../recipes/sweet-bread.html',
+    'pão de alho': '../recipes/garlic-bread.html',
+    'batatas fritas': '../recipes/french-fries.html',
+    'bolinho de frango': '../recipes/chicken-cakes.html',
+    'cheesecake de geleia com morangos': '../recipes/cheesecake-strawberry-jam.html',
+    'torta de morango': '../recipes/strawberry-pie.html',
+    'bolo de chocolate': '../recipes/chocolate-cake.html',
+    'biscoitos de chocolate': '../recipes/chocolate-cookies.html',
+    'linguiça na frigideira': '../recipes/sausage-in-the-frying-pan.html',
+    'carne de porco assada com especiarias': '../recipes/pork-roasted-with-spices.html',
+    'carne de porco assada com legumes': '../recipes/roast-pork-with-vegetables.html',
+    'caldo de frango com batatas': '../recipes/chicken-broth-with-potatoes.html',
+    'sopa de legumes': '../recipes/vegetables-soup.html',
+    'pizza de chocolate': '../recipes/chocolate-pizza.html',
+    'pizza de calabresa': '../recipes/pepperoni-pizza.html',
 
-    'pão de queijo': '../pages/recipes/cheese-bread.html',
+    'pão de queijo': '../recipes/cheese-bread.html',
   
-    'filé de peixe': '../pages/recipes/fish-fillet.html',
+    'filé de peixe': '../recipes/fish-fillet.html',
   }
   
   searchInput.addEventListener('input', search)
   searchInput.addEventListener('click', search)
+
   
   searchInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -194,7 +195,9 @@ function globalSearchFunction(){
 
   autocomplete(searchInput, recipes);
 }
-globalSearchFunction()
+
+globalSearchFunctionRC()
+
 
 
 
