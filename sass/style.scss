@@ -340,12 +340,18 @@ a{
   justify-content: center;
   padding: 5px;
   margin-top: 0px;
+
+  p{
+    font-style: italic;
+  }
+
   a{
     color: variaveis.$color-main1;
     text-decoration: underline !important;
     transition: 0.3s ease-in-out;
 
-  }:hover{
+  }
+  a:hover{
     color: variaveis.$color-main2;
   }
 }
@@ -465,5 +471,28 @@ a{
     }:hover{
       color: rgb(68, 26, 2);
     }
+  }
+}
+
+// SEÇÃO ABOUT
+#about-cont{
+  #back{
+    display: inline-block;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  i{
+    font-size:40px;
+    color: variaveis.$color-main1;
+  }
+  #back:hover{
+    scale: 1.1;
+  }
+
+
+  div{
+    color: variaveis.$color-main1;
+    margin: 0 auto;
+    padding-bottom: 20%;
   }
 }

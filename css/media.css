@@ -309,6 +309,9 @@
   .footer .links-rodape li {
     margin-top: 1.5em;
   }
+  #about-cont div {
+    width: 80%;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -476,6 +479,9 @@
   }
   .footer .links-rodape li {
     margin-top: 1.5em;
+  }
+  #about-cont div {
+    width: 80%;
   }
 }
 /*Medium devices (tablets, 768px and up)*/
@@ -670,6 +676,9 @@
   .footer .links-rodape li {
     margin-top: 1.5em;
   }
+  #about-cont div {
+    width: 70%;
+  }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -851,6 +860,9 @@
   .container-bem-avaliadas .cont-receita-avaliada5 h4,
   .container-bem-avaliadas .cont-receita-avaliada6 h4 {
     font-size: 22px;
+  }
+  #about-cont div {
+    width: 50%;
   }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/

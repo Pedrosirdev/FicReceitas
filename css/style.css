@@ -1790,12 +1790,15 @@ a {
   padding: 5px;
   margin-top: 0px;
 }
+#all-recipes-section02 p {
+  font-style: italic;
+}
 #all-recipes-section02 a {
   color: rgb(89, 34, 2);
   text-decoration: underline !important;
   transition: 0.3s ease-in-out;
 }
-#all-recipes-section02 :hover {
+#all-recipes-section02 a:hover {
   color: rgb(191, 129, 75);
 }
 
@@ -1926,6 +1929,24 @@ a {
 }
 .footer .links-rodape :hover {
   color: rgb(68, 26, 2);
+}
+
+#about-cont #back {
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+#about-cont i {
+  font-size: 40px;
+  color: rgb(89, 34, 2);
+}
+#about-cont #back:hover {
+  scale: 1.1;
+}
+#about-cont div {
+  color: rgb(89, 34, 2);
+  margin: 0 auto;
+  padding-bottom: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
