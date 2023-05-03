@@ -16,6 +16,8 @@
 
 **Formulário de Sugestões de Receitas:** Gostaria de compartilhar suas próprias receitas ou sugerir uma nova? Utilize nosso formulário intuitivo para enviar suas sugestões. Compartilhe o nome da receita, os ingredientes, o modo de preparo e, se quiser, até mesmo uma foto inspiradora.
 
+**Carousel de Imagens:** Explore receitas em um carousel de imagens cativante. O carousel é projetado para passar automaticamente, permitindo que você descubra visualmente uma variedade de pratos e ingredientes tentadores.
+
 
 
 
@@ -23,7 +25,7 @@
 
 ## Autor
 
-- [Pedro Henrique](https://github.com/Pedrosirdev)
+- [Pedo Henrique](https://github.com/Pedrosirdev)
 
 ## Documentação de cores
 
@@ -39,4 +41,8 @@
 
 **Front-end:** HTML, CSS, SASS, Javascript, Bootstrap
 
+
+## Referência
+
+- Todas as imagens das receitas estão no [Freepik](https://br.freepik.com/)
 
