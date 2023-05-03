@@ -1,5 +1,16 @@
 @use "variaveis";
 
+
+#info-screen{
+  display: none !important;
+} 
+#x-small, #small, #medium, #large, #x-large, #xx-large{
+  position: fixed;
+  background: red;
+  padding: 2px;
+  font-weight: bold;
+}
+
             /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
