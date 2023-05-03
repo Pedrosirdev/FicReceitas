@@ -23,7 +23,7 @@
 
 ## Autor
 
-- [Pedo Henrique](https://github.com/Pedrosirdev)
+- [Pedro Henrique](https://github.com/Pedrosirdev)
 
 ## Documentação de cores
 
